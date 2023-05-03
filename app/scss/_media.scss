@@ -256,7 +256,10 @@
     .footer{
         background-color: #120550;
     }
-    
+    ///modal
+    .book-modal{
+        width: 600px;
+    }
 }
 
 @media(max-width: 768px){
@@ -357,6 +360,18 @@
     }
     .footer .footer-main-item > ul{
         row-gap: 5px;
+    }
+
+    ///modal
+    .modal .container{
+        width: 100%;
+        height: 100%;
+    }
+    .book-modal{
+        width: 100%;
+        min-height: 100%;
+        border-radius: 0px;
+        border-top: none;
     }
 
 }
@@ -582,7 +597,42 @@
     .footer .footer-year{
         text-align: center;
     }
+    /////modal
     
+    .book-modal .book-modal_form{
+        display: block;
+    }
+    .book-modal input{
+        max-width: 100%;
+        margin-bottom: 16px;
+        font-size: 14px;
+        height: 36px;
+    }
+    .book-modal label{
+        margin-bottom: 4px;
+    }
+    .book-modal .help{
+        margin-top: 4px;
+        margin-bottom: 16px;
+    }
+    .book-modal .submit{
+        width: 100%;
+    }
+    .book-modal .book-modal_title{
+        font-size: 36px;
+        margin-bottom: 20px;
+        line-height: 1;
+    }
+    .book-modal .book-modal_location{
+        font-size: 12px;
+    }
+    .book-modal .description{
+        font-size: 14px;
+        height: 160px;
+    }
+    .book-modal label{
+        font-size: 12px;
+    }
     // .button-reservation img {
     //     margin-left: 4px;
     // }
@@ -620,5 +670,20 @@
 
     .special-events .special-events-mobile-wrap .slider{
         height: 385px;
+    }
+    .book-modal{
+        padding: 60px 22px 60px;
+    }
+    .book-modal .submit{
+        height: 40px;
+    }
+    .book-modal .description{
+        height: 130px;
+    }
+    .book-modal .book-modal_title{
+        font-size: 30px;
+    }
+    .book-modal input{
+        margin-bottom: 14px;
     }
 }

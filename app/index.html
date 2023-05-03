@@ -85,7 +85,7 @@
                     </li>
                 </ul>
                 <div class="booking">
-                    <div class="booking-party">
+                    <div class="booking-party booking-party_btn">
                         <a href="#">Book a party</a>
                         <div class="wavy_line"><img src="images/wavy line/line_l.svg" alt="left"><img src="images/wavy line/line_c.svg" alt="center"><img src="images/wavy line/line-r.svg" alt="right"></div>
                     </div>
@@ -124,7 +124,7 @@
                 <div class="location">Marlborough, MA</div>
             </div>
             <ul class="menu-mobile">
-                <li class="menu-mobile-item">
+                <li class="menu-mobile-item booking-party_btn">
                     <div class="menu-mobile-item_title">
                         <a href="#">Book a Party</a>
                     </div>
@@ -215,6 +215,29 @@
             </ul>
         </div>
     </header>
+    <div class="modal">
+        <div class="container">
+            <div class="book-modal">
+                <div class="book-modal_header">
+                    <div class="book-modal_location">Marlborough</div>
+                    <h3 class="book-modal_title">Book a Party</h3>
+                </div>
+                <form action="" class="book-modal_form">
+                    <input class="first-name" type="text" placeholder="First name">
+                    <input class="last-name" type="text" placeholder="Last Name">
+                    <input class="email" type="email" placeholder="Email address">
+                    <input class="phone" type="text" name="" id="phone" placeholder="Mobile Phone">
+                    <input class="event-date" type="date" name="" id="date" placeholder="Event Date">
+                    <input class="attendance" type="text" placeholder="Estimated Attendance">
+                    <label for="descr">Description</label>
+                    <textarea class="description" name="" id="descr" cols="30" rows="10"></textarea>
+                    <div class="help">This is an example of hint text to help user.</div>
+                    <button class="submit">Submit</button>
+                </form>
+            </div>
+            <img class="close-modal" src="./images/icons/close-black.svg" alt="close">
+        </div>
+    </div>
     <section class="hero">
         <div class="hero-wrap">
             <div class="hero-title">
@@ -750,6 +773,7 @@
     <script src="js/index.js"></script>
     <script src="js/header.js"></script>
     <script src="js/special-events_slider.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
 

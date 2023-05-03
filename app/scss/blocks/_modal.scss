@@ -1,0 +1,115 @@
+.modal{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgb(0, 0, 0, .4);
+    .container{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        overflow-y: auto;
+    }
+    .close-modal{
+        position: absolute;
+        height: 24px;
+        top: 40px;
+        right: 30px;
+        cursor: pointer;
+    }
+}
+
+.book-modal{
+    display: none;
+    width: 748px;
+    background: #FFFFFF;
+    border-top: 10px solid #FC6F2E;
+    border-radius: 0px 0px 20px 20px;
+    padding: 96px 48px 64px;
+    .book-modal_location{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #120550;
+    }
+    .book-modal_title{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.02em;
+        color: #120550;
+        margin-bottom: 32px;
+    }
+    .book-modal_form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+    input{
+        background: #FFFFFF;
+        border: 1px solid #D0D5DD;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        padding: 10px 14px;
+        max-width: 318px;
+        width: 100%;
+        height: 44px;
+    }
+    label{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #344054;
+        display: block;
+        margin-bottom: -8px;
+    }
+    .description{
+        background: #FFFFFF;
+        border: 1px solid #D0D5DD;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        width: 100%;
+        height: 206px;
+        resize: none;
+        padding: 10px 14px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #101828;
+        grid-area: 5/1/6/3;
+        overflow: hidden;
+        margin-bottom: -10px;
+    }
+    .submit{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        height: 48px;
+        background: #FC6F2E;
+        box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+        border-radius: 8px 0px;
+        text-transform: uppercase;
+        grid-area: 7/1/8/3;
+        border: none;
+        color: #FFFFFF;
+    }
+    input:focus, textarea:focus{
+        outline: rgb(0,0,0);
+    }
+    .help{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        color: #475467;
+        grid-area: 6/1/7/3;
+        margin-bottom: 28px;
+    }
+    .phone{
+        grid-area: 2/2/3/3;
+    }
+}
