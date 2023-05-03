@@ -1,0 +1,88 @@
+.hero {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url("../images/main-banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1.45 / 1;
+    .hero-wrap{
+        position: relative;
+        z-index: 6;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        padding: 172px 0px 0px calc( 96 / 1440 * 100vw);
+    }
+    .video_holder {
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .video_holder video {
+        position: relative;
+    }
+    
+    .logo_mask {
+        position: relative;
+        display: inline-block;
+        width: 80%;
+        height: 100%;
+        -webkit-mask-image: url('../images/Video_text.svg');
+        mask-image: url('../images/Video_text.svg');
+    
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+      
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
+
+        // width: 67%;
+        // height: auto;
+        // -webkit-mask-size: 100%; 
+        // mask-size: 100%;
+    }
+    .hero-title-overlay{
+        position: absolute;
+        letter-spacing: -0.03em;
+        font-weight: 400;
+        font-size: calc(80 / 1440 * 100vw);
+        text-shadow: 0px 2.88067px 5.76135px rgba(16, 24, 40, 0.1), 0px 1.44034px 2.88067px rgba(16, 24, 40, 0.06);
+        line-height: 2;
+        bottom: 0px;
+        right: calc( 179 / 1440 * 100vw);
+
+    }
+    .hero-title{
+        position: relative;
+    }
+    &-triangle{
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: calc( 92 / 1666 * 100vw);
+        -webkit-clip-path: polygon(0 95%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 95%, 100% 0, 100% 100%, 0% 100%);
+        // -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        // clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        background-color: #120550;
+    }
+    .sub-title{
+        position: relative;
+        font-weight: 700;
+        font-size: calc(45 / 1440 * 100vw);
+        line-height: 1;
+        top: -15px;
+    }
+}
+
+.chevron{
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.chevron_active{
+    transform: rotate(180deg);
+}
+

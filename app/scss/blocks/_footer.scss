@@ -1,0 +1,144 @@
+.footer{
+    background-color: #0E0E2C;
+    width: 100%;
+    overflow: hidden;
+    .container{
+        margin: 0 auto;
+        padding: 64px 80px 48px 112px;
+        max-width: 1440px;
+    }
+    .registration{
+        display: flex;
+        justify-content: space-between;
+        grid-gap: 30px;
+        margin-bottom: 64px;
+    }
+    .registration-title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .registration-descr{
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .registration-form{
+        display: flex;
+        align-items: center;
+    }
+    .registration-input{
+        width: 444px;
+        outline: none;
+        height: 44px;
+        background: #FFFFFF;
+        border: 1px solid #D0D5DD;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        padding: 12px 14px;
+        margin-right: 16px;
+    }
+    .registration-input::placeholder{
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #C3C2C1;
+    }
+    .divider{
+        background-color: #534B75;
+        width: 100%;
+        height: 2px;
+    }
+    .footer-main{
+        margin-top: 64px;
+        margin-bottom: 64px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 32px;
+        padding-right: 32px;
+    }
+    .footer-main-item ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+    }
+    .footer-main-header{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+    ul.play-list>li:nth-child(1), ul.party-list>li:nth-child(1){
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #EEF2F6;
+    }
+    .footer-main-item ul>.list-item{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #EEF2F6;
+    }
+    .play-list{
+        grid-template-rows: repeat(10, 24px);
+        row-gap: 10px;
+    }
+    .party-list{
+        grid-template-rows: repeat(7, 24px);
+        row-gap: 10px;
+    }
+    .company-list, .help-list{
+        grid-template-rows: repeat(3, 24px);
+        row-gap: 10px;
+    }
+    .legal-list{
+        grid-template-rows: repeat(4, 24px);
+        row-gap: 10px;
+    }
+    .footer-bottom{
+        margin-top: 32px;
+        padding-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-bottom .logo-wrapper{
+        display: flex;
+        align-items: center;
+    }
+    .footer-logo{
+        margin-right: 66px;
+    }
+    .footer-social{
+        display: flex;
+        img + img{
+            margin-left: 24px;
+        }
+    }
+    .footer-year{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+    }
+
+    .footer-main-mobile{
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 36px 0px;
+        row-gap: 16px;
+    }
+    .footer-main-mobile-item{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        
+    }
+}

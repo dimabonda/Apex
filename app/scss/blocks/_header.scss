@@ -1,0 +1,416 @@
+.header{
+    min-width: 100%;
+    position: fixed;
+    z-index: 30;
+    &-top{
+        height: 46px;
+        background: linear-gradient(262.02deg, #2F68DB 45.39%, #528BFF 60.18%);
+        padding: 0 64px 0 244px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-bottom{
+        height: 73px;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 0 64px 0 244px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-location{
+        font-size: 12px;
+        font-weight: 500;
+        color: #fff;
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        span:last-of-type{
+            font-weight: 700;
+            color: #BAFF00;
+            margin-left: 6px;
+        }
+        input{
+            margin-left: 8px;
+        }
+    }
+    &-info{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    &-delimiter{
+        font-size: 12px;
+        font-weight: 500;
+        color: #fff;
+        margin-right: 6px;
+        margin-left: 2px;
+        margin-bottom: 2px;
+    }
+    &-worktime-drop{
+        display: none;
+        font-size: 12px;
+        font-weight: 500;
+        color: #fff;
+    }
+    
+    &-worktime-drop:hover{
+        color:#B3E42E;
+        img{
+            content: url('../images/icons/chevron-down-green.svg');
+            transform: rotate(180deg);
+        }
+    }
+    &-worktime-drop:hover>.worktime-drop-list{
+        opacity: 1;
+        pointer-events: visible;
+    }
+    &-worktime{
+        font-size: 12px;
+        font-weight: 500;
+        color: #fff;
+    }
+    .worktime-drop-list{
+        color: #18181B;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        padding: 28px 20px;
+        margin: 0px;
+        position: absolute;
+        background: #FFFFFF;
+        box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+        border-radius: 0px 0px 12px 12px;
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 8px;
+        row-gap: 15px;
+
+        .day{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            margin-right: 8px;
+        }
+        .time{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+        
+    .logo{
+        position: absolute;
+        padding: 22px 72px 70px 72px;
+        left: -28px;
+        bottom: 0px;
+        width: 272px;
+        height: 157px;
+        background: linear-gradient(89.42deg, #E9168C -2.39%, #FC5B1F 69.88%);
+        box-shadow: 0px 12px 16px rgba(16, 24, 40, 0.08), 0px 4px 6px rgba(16, 24, 40, 0.03);
+        transform: rotate(180deg);
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+        &-wrap{
+            transform: rotate(180deg);
+        }
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        &-list{
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        &-item{
+            a {
+                color: #fff;
+                font-weight: 500;
+                font-size: 14px;
+                text-decoration: none;
+                transition: all ease 0.3s;
+            }
+        }
+        &-item+.nav-item{
+            margin-left: 24px;
+        }
+        &-item:hover a{
+            color:#B3E42E;
+        }
+    }
+    .search{
+        margin-left: 24px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-input{
+        display: none;
+        padding: 8px 36px 8px 12px;
+        max-width: 250px;
+        height: 36px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid #FFFFFF;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        color: #fff;
+    }
+    .search-icon{
+        cursor: pointer;
+    }
+    .search-icon_active{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+    .search-input:focus{
+        outline: none;
+    }
+    .search-input::placeholder{
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 2;
+        
+    }
+    .menu{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        a{
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #fff;
+            margin-right: 10px;
+            transition: all ease 0.3s;
+            img{
+                margin-left: 8px;
+                width: 20px;
+                height: 20px;
+                transition: transform 0.3s ease;
+            }
+        }
+        &-item+.menu-item{
+            margin-left: 32px;
+        }
+        &-item:hover > a{
+            color:#B3E42E;
+            img{
+                content: url('../images/icons/chevron-down-green.svg');
+                transform: rotate(180deg);
+            }
+        }
+        &-item:hover > .drop-list{
+            opacity: 1;
+            pointer-events: visible;
+        }
+    }
+    .drop-list{
+        opacity: 0;
+        transition: all ease 0.3s;
+        position: absolute;
+        padding: 12px;
+        background: #FFFFFF;
+        border: 1px solid #E4E4E7;
+        box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+        border-radius: 12px;
+        margin: 0;
+        pointer-events: none;
+        list-style-type: none;
+        li + li {
+            margin-top: 8px;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+
+    .drop-list li{
+        padding: 8px 12px;
+        border-bottom: 0.5px solid #C3C2C1;
+        cursor: pointer;
+        
+    }
+
+    .drop-list li:hover{
+        background-color: rgba(0, 0, 0, .1);
+    }
+
+    .drop-list li a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #18181B;
+    }
+
+    .header-location:hover {
+        img{
+            content: url('../images/icons/chevron-down-green.svg');
+            transform: rotate(180deg);
+        }
+        .drop-list{
+            opacity: 1;
+            pointer-events: visible;
+            top: 15px;
+        }
+
+    }
+
+    .booking{
+        display: flex;
+        align-items: center;
+        &-party{
+            margin-right: 34.5px;
+            a{
+                color: #fff;
+                letter-spacing: 0.5px;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+        &-party:hover a{
+            color:#B3E42E;
+        }
+    }
+    .header-mobile{
+        display: none;
+        padding: 20px 30px 44px 25px;
+        position: fixed;
+        background: linear-gradient(180deg, #FC6F2E 45.85%, #FC375E 111.71%);
+        height: 150px;
+        width: 100%;
+        z-index: 200;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+        transition: all ease 0.3s;
+        .logo-mobile{
+            display: flex;
+            align-items: end;
+        }
+        .logo-mobile img:first-child{
+            height: 32px;
+        }
+        .logo-mobile img:last-child{
+            margin-bottom: 5px;
+            height: 15px;
+        }
+        .logo-container{
+            display: flex;
+            align-items: center;
+            grid-gap: 30px;
+        }
+        .logo-container>img{
+            margin: 0 0 0 auto;
+            display: none;
+        }
+        .logo-container>img.active{
+            display: block;
+            cursor: pointer;
+        }
+        .hamburger{
+            cursor: pointer;
+            width: 25px;
+            height: 18px;
+        }
+        .hamburger_hidden{
+            display: none;
+        }
+        .location-wrap{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 16px;
+            gap: 4px;
+            width: 172.5px;
+            height: 35px;
+            border: 1px solid #FFFFFF;
+            border-radius: 50px;
+            margin-top: 28px;
+        }
+        .location{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 135%;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .menu-mobile-item {
+            margin-top: 32px;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+            }
+            .menu-mobile-item_title{
+                display: flex;
+                justify-content: space-between;
+                a{
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 1;
+                    color: #FFFFFF;
+                }
+                img{
+                    height: 24px;
+                    transition: all ease 0.3s;
+                }
+            }
+            .menu-mobile_drop-list{
+                overflow: hidden;
+                max-height: 0px;
+                transition: max-height ease 0.3s;
+                li{
+                    margin-top: 20px;
+                    padding-left: 10px;
+                    a{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 1;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            .menu-mobile_drop-list_active{
+                max-height: 1000px;
+            }
+        }
+        .divider{
+            border: 1px solid #FFFFFF;
+        }
+        .search-mobile{
+            display: none;
+        }
+        .search-mobile_active{
+            display: block;
+        }
+        .search{
+            margin-top: 28px;
+            margin-bottom: 28px;
+            margin-left: 0px;
+        }
+        .search-input{
+            display: block;
+            max-width: 100%;
+            width: 100%
+        }
+    }
+
+    .header-mobile_active{
+        clip-path: none;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .arrow_active{
+        transform: rotate(180deg);
+    }
+}
+

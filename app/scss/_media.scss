@@ -1,0 +1,624 @@
+
+@media(max-width: 1440px){
+    .hero{
+        background-position: right;
+    }
+    .hero .hero-wrap{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1240px){
+    .special-events .special-events-wrap .card-wrap{
+        padding: 30px 20px 50px 64px;
+    }
+}
+
+
+@media(max-width: 1200px){
+    //header 
+    .header-wrap .nav-item a{
+        font-size: 12px;
+    }
+    .header-wrap .nav-item+.nav-item{
+        margin-left: 15px
+    }
+    .header-wrap .nav-item{
+        display: flex;
+        align-items: center;
+    }
+    .header-wrap .search{
+        margin-left: 10px;
+    }
+    .header-top{
+        padding: 0 20px 0 190px;
+    }
+    .header-bottom{
+        height: 60px;
+        padding: 0 20px 0 190px
+    }
+    .header-location{
+        font-size: 11px;
+        align-items: center;
+    }
+    .header-worktime{
+        font-size: 11px;
+    }
+    .header-wrap .logo-wrap img{
+        width: 90px;
+    }
+    .header-wrap .logo{
+        width: 230px;
+        padding: 22px 68px 70px 68px;
+    }
+    // .header-location span:first-of-type{
+    //     display: none;
+    // }
+    .header-wrap .menu-item-header a{
+        font-size: 14px;
+    }
+
+    ////entertainments
+
+
+    .entertainments .entertainments-header{
+        font-size: 44px;
+    }
+    .entertainments .entertainments-subheader{
+        font-size: 22px;
+    }
+
+///special-events
+    .special-events .card-title{
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    .special-events .card-descr{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .special-events .card-header{
+        padding: 0px 18px 0px 69px;
+        font-size: 17px;
+    }
+///events
+    .events .events-wrapper .events-descr{
+        max-width: 300px;
+    }
+    .events .events-wrapper .events-item:nth-child(2) .card {
+        margin-top: 285px;
+    }
+//////
+    .reviews .card{
+        width: 760px;
+        padding: 60px 80px;
+    }
+    .reviews .reviews-carousel{
+        height: 650px;
+    }
+    .reviews .back-quotes{
+        transform: translateX(-350px);
+    }
+/////
+    .booking-event .container{
+        flex-direction: column;
+        padding: 0px 16px;
+    }
+    .booking-event .delimiter{
+        flex-direction: row;
+        margin: 48px auto;
+    }
+    .booking-event .delimiter-line{
+        height: 1px;
+        width: 110px;
+    }
+    .booking-event .delimiter-text{
+        margin: 0px 10px;
+    }
+    .booking-event .plan-title, .booking-event .help-title{
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .booking-event .help-description{
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+
+    .gift-card .container .content-wrap{
+        display: none;
+    }
+    .gift-card .container .content-wrap-mobile{
+        display: block;
+    }
+
+    .gift-card .gift-card_padding{
+        height: 190px;
+    }
+
+    ///footer
+    .footer .registration{
+        flex-direction: column;
+    }
+
+    .footer .footer-main{
+        grid-template-columns: repeat(3, 1fr);
+        padding-right: 0px;
+        row-gap: 40px;
+    }
+
+    .footer .footer-bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+    // .button{
+    //     font-size: 12px
+    // }
+    .button-reservation{
+        padding: 0 18px;
+        height: 38px;
+        font-size: 12px
+    }
+    .button-booking, .button-help_email{
+        max-width: 375px;
+        width: 100%;
+    }
+
+    
+}
+
+@media(max-width: 991px){
+    ///header
+    .header .header-wrap{
+        display: none;
+    }
+    .header .header-mobile{
+        display: block;
+    }
+
+        ///hero
+    .hero{
+        aspect-ratio: 1.3 / 1;
+    }
+
+    ///entertainments 
+    
+    .entertainments .header-wrap{
+        display: block;
+        padding: 0 50px;
+    }
+    .entertainments .entertainments-header{
+        max-width: 100%;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .entertainments .entertainments-subheader{
+        margin: 0 auto 30px;
+        text-align: center;
+        max-width: 612px;
+    }
+
+    .entertainments .button-reservation{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .entertainments .carousel{
+        padding: 45px 0px 45px 16px;
+        
+    }
+
+    .entertainments .carousel-ellipse{
+        width: 112%;
+        height: 73px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .entertainments .carousel-item{
+        height: 384px;
+        &>span{
+            font-size: 20px;
+            left: 30px;
+            bottom: 50px;
+        }
+    }
+
+    ////events
+    .events .events-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .events .events-wrapper .events-item:nth-child(2) .card {
+        margin-top: 40px;
+        
+    }
+    .events .events-wrapper .events-item:nth-child(2) {
+        grid-area: 3/2/4/3;
+    }
+
+    .events .events-wrapper .events-item:nth-child(4) {
+        margin-top: 270px;
+        grid-area: 2/1/5/2;
+    }
+
+    ///special-events
+    .special-events .special-events-wrap{
+        display: none;
+    }
+
+    .special-events .special-events-mobile-wrap{
+        display: block;
+    }
+
+    //footer
+    .footer{
+        background-color: #120550;
+    }
+    
+}
+
+@media(max-width: 768px){
+    ///hero
+    .hero {
+        aspect-ratio: 1.1/1;
+    }
+    .hero-triangle{
+        -webkit-clip-path: polygon(0 0, 100% 95%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 95%, 100% 100%, 0% 100%);
+        // -webkit-clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+        // clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+    }   
+    .hero .logo_mask{
+        width: 95%;
+    }
+
+    //entertainments
+    .entertainments .entertainments-header{
+        font-size: 34px;
+    }
+
+    .entertainments .entertainments-subheader{
+        line-height: 1.5;
+        font-size: 16px;
+    }
+
+    // .entertainments .button{
+    //     font-size: 10px
+    // }
+    // .entertainments .button-reservation{
+    //     padding: 0 15px;
+    //     // height: 32px;
+    // }
+
+    //events 
+    .events .wrapper{
+        padding: 64px 16px;
+    }
+
+    .special-events-mobile-wrap .card-wrap{
+        padding: 51px 30px 60px 30px;
+        height: auto;
+    }
+
+    ///reviews
+    .reviews .card{
+        width: 570px;
+        padding: 40px 60px;
+    }
+    .reviews .card .card-text{
+        font-size: 16px;
+    }
+    .reviews .card-left .card-text{
+        font-size: 24px;
+    }
+    .reviews .back-quotes{
+        transform: translateX(-250px);
+    }
+    ///gift-card
+    .gift-card .card-main{
+        padding: 50px 0px;
+        width: 260px;
+    }
+    .gift-card .card-main .card-image{
+        width: 120px;
+    }
+    .gift-card .card-main .card-title{
+        font-size: 54px;
+    }
+    .gift-card .card-main .card-main-logo{
+        width: 140px;
+    }
+
+    .gift-card .card-sub_card{
+        width: 260px;
+        border-radius: 20px;
+    }
+    .gift-card .card-sub_card .card-image{
+        height: 330px;
+    }
+    .gift-card .container .content-wrap-mobile .card-main{
+        left: -15%;
+    }
+    .gift-card .container .content-wrap-mobile .cards{
+        height: 380px;
+    }
+
+    //footer
+    .footer .footer-main{
+        column-gap: 16px;
+    }
+    .footer .container{
+        padding: 64px 40px;
+    }
+    .footer .footer-main-item ul>.list-item{
+        font-size: 14px;
+    }
+    .footer .footer-main-item > ul{
+        row-gap: 5px;
+    }
+
+}
+
+@media (max-width: 575px){
+    //hero
+    .hero {
+        aspect-ratio: 0.98/1;
+    }
+    .hero .sub-title{
+        top: 0px;
+    }
+
+    //entertainments
+    .entertainments .header-wrap{
+        padding: 0px 15px 0px 17px;
+        
+    }
+    
+
+    .entertainments .button-reservation{
+        max-width: 375px;
+        font-size: 14px;
+        height: 42px;
+        width: 100%;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 5px;
+        &>img{
+            display: none;
+        }
+    }
+    .entertainments .carousel-item{
+        height: 293px;
+        &>span{
+            font-size: 16px;
+            left: 20px;
+            bottom: 40px;
+        }
+    }
+    .entertainments .carousel-item+.carousel-item{
+        margin-left: 21px;
+    }
+
+
+    /////events
+    .events .events-wrapper{
+        display: none;
+    }
+    .events .events-mobile{
+        display: block;
+    }
+
+    .events .button-events{
+        display: block;
+        margin: 0 auto;
+        font-size: 14px;
+        max-width: 375px;
+        width: 100%;
+        height: 48px;
+    }
+    .events .events-title{
+        text-align: center;
+    }
+    .events .events-descr{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .special-events{
+        padding-top: 0px;
+    }
+    .special-events-mobile-wrap .card-wrap{
+        padding:36px 20px 32px 16px;
+        height: auto;
+    }
+
+    .special-events-mobile-wrap .card-title{
+        font-size: 32px;
+        margin-bottom: 16px;
+    } 
+    .special-events-mobile-wrap .card-header{
+        padding: 0px 30px;
+    }
+
+    .special-events-mobile-wrap .slider{
+        display: none;
+    }
+
+    .special-events .special-events-mobile-wrap .slider-control{
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: -80px;
+    }
+    .special-events-mobile-wrap .card-descr{
+        font-size: 16px;
+    }
+
+    .special-events-mobile-wrap .card-details{
+        font-size: 14px;
+        display: flex;
+        justify-content: right;
+        img{
+            margin-left: 4px;
+        }
+    }
+    /////
+    .gift-card .card-main{
+        width: 174px;
+        padding: 38px 0px;
+        border-radius: 10px;
+    }
+    .gift-card .card-main .card-title{
+        margin-top: 12px;
+        font-size: 36px;
+        line-height: 25px;
+    }
+    .gift-card .card-main .card-image {
+        width: 88px;
+    }
+    .gift-card .card-main .card-main-logo {
+        margin-top: 28px;
+        width: 90px;
+    }
+
+    .gift-card .card-sub_card{
+        padding: 26px 0px 20px;
+        border-radius: 16px;
+        width: 175px;
+    }
+    .gift-card .card-sub_card .card-image {
+        height: 245px;
+    }
+
+    .gift-card .container .content-wrap-mobile .cards{
+        width: 190px;
+        height: 190px;
+    }
+    .gift-card .container .content-wrap-mobile .gift-card-buttons_group{
+        display: block;
+    }
+
+    .content-wrap-mobile .button-gift{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        max-width: 375px;
+        width: 100%;
+    }
+    .content-wrap-mobile .button-gift-card{
+        margin-bottom: 15px;
+    }
+    .content-wrap-mobile .button-check-balance{
+        margin-bottom: 40px;
+    }
+    ////reviews
+    .reviews .reviews-carousel-mobile{
+        display: block;
+    }
+    .reviews-carousel{
+        display: none;
+    }
+    .reviews .back-quotes{
+        top: 5px;
+        transform: translateX(-120px);
+        &>img{
+            height: 45px;
+        }
+    }
+    // .reviews .card{
+    //     min-height: 400px;
+    // }
+    // .reviews .card .card-text{
+    //     font-size: 16px;
+    //     line-height: 24px;
+    // }
+    .gift-card .container .content-wrap-mobile .content{
+        padding: 0px 19px;
+    }
+    .gift-card .container .content-wrap-mobile .gift-card-description {
+        margin-bottom: 15px;
+    }
+    ////footer 
+    .footer .container{
+        padding: 64px 16px 36px;
+    }
+    .footer .registration-title{
+        font-size: 24px;
+        letter-spacing: -0.02em;
+        line-height: 32px;
+    }
+    .footer .footer-main{
+        display: none;
+    }
+    .footer .footer-main-mobile{
+        display: grid;
+    }
+    .footer .registration{
+        grid-gap: 40px;
+    }
+    .footer .registration-form{
+        flex-direction: column;
+    }
+    .footer .registration-input{
+        margin-right: 0px;
+        max-width: 440px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .button.registration-button{
+        max-width: 440px;
+        width: 100%;
+        border-radius: 8px;
+    }
+    .footer .footer-bottom .logo-wrapper{
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+    .footer .footer-logo{
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+    .footer .footer-year{
+        text-align: center;
+    }
+    
+    // .button-reservation img {
+    //     margin-left: 4px;
+    // }
+    // .button-reservation {
+    //     padding: 0 10px;
+    //     height: 26px;
+    //     font-size: 8px;
+    // }
+}
+
+@media(max-width: 440px){
+    //hero
+    .hero {
+        aspect-ratio: 0.89/1;
+    }
+
+    //
+    .entertainments .entertainments-header{
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .entertainments .entertainments-subheader{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .events .events-title{
+        text-align: left;
+    }
+    .events .events-descr{
+        text-align: left;
+        margin: 0;
+    }
+
+    .special-events .special-events-mobile-wrap .slider{
+        height: 385px;
+    }
+}

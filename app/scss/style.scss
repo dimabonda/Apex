@@ -1,0 +1,93 @@
+body{
+    background-color: #120550;
+    position: relative;
+    font-family: 'Gotham', sans-serif;
+    color: #fff;
+    // overflow-y: overlay;
+    // min-width: 100%;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+
+.button{
+    background-color: #FC6F2E;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 8px 0px;
+    height: 48px;
+    text-transform: uppercase;
+    &:focus {
+        outline: none;
+    }
+    &-reservation{
+        padding: 0 24px;
+        img{
+            margin-left: 8px;
+        }
+    }
+    &-events{
+        padding: 0 39px;
+    }
+    &-booking{
+        padding: 12px 24px;
+    }
+    &-help_email{
+        padding: 12px 24px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(8px);
+    }
+    &-gift{
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        img{
+            margin-right: 6px;
+        }
+        input{
+            width: 20px;
+            margin-left: 4px;
+        }
+    }
+    &-gift-card{
+        height: 48px;
+        background: #120550;
+        padding: 12px 24px;
+        margin-right: 16px;
+        
+    }
+    &-check-balance{
+        padding: 12px 24px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(8px);
+    }
+    &.registration-button{
+        // margin-left: 16px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        padding: 12px 24px;
+    }
+}
+
+@import 'blocks/header'; 
+@import 'blocks/hero';
+@import 'blocks/entertainments';
+@import 'blocks/events';
+@import 'blocks/special-events';
+@import 'blocks/reviews';
+@import 'blocks/booking-event';
+@import 'blocks/gift-card';
+@import 'blocks/footer';
+@import 'media';

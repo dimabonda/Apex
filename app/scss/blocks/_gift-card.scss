@@ -1,0 +1,181 @@
+.gift-card{
+    .gift-card_padding{
+        height: 175px;
+        background-color: #120550;
+        position: relative;
+        z-index: 6;
+    }
+    .container{
+        // height: 483px;
+        background: #F9686A;
+        position: relative;
+        overflow: hidden;
+        .content{
+            position: relative;
+            z-index: 6;
+        }
+        
+        .content-wrap{
+            display: flex;
+            position: relative;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 106px 0px 67px 60px;
+            &>div:nth-child(4){
+                position: absolute;
+                width: 1440px;
+                height: 1440px;
+                background: #E9168C;
+                filter: blur(303px);
+                top: 39px;
+                left: 550px;
+                z-index: 5;
+            }
+            &>div:nth-child(5){
+                position: absolute;
+                width: 581px;
+                height: 581px;
+                background: #E9168C;
+                filter: blur(303px);
+                top: 471px;
+                left: 7px;
+                z-index: 4;
+            }
+        }
+        .gift-card-title, .gift-card-lable{
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 60px;
+        }
+        .gift-card-title{
+            margin-bottom: 14px;
+        }
+        .gift-card-lable{
+            position: relative;
+            width: 200px;
+            height: 58px;
+            transform: skew(-12deg);
+            background: #6095FF;
+            margin-bottom: 31px;
+        }
+        .gift-card-lable:before{
+            content: 'WHOA';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            background: transparent;
+            z-index: 2;
+            width: 200px;
+            height: 58px;
+            padding-left: 13px;
+            // text-align: center;
+            transform: skew(12deg);
+        }
+        .gift-card-description{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 32px;
+            margin-bottom: 48px;
+        }
+        .gift-card-buttons_group{
+            display: flex;
+        }
+        .content-wrap-mobile{
+            display: none;
+            .content{
+                max-width: 600px;
+                margin: 0 auto 40px;
+            }
+            .gift-card-lable{
+                display: inline-block;
+                margin-bottom: -15px;
+            }
+            .gift-card-title{
+                text-align: center;
+            }
+            .gift-card-description{
+                text-align: center;
+            }
+            .gift-card-buttons_group{
+                justify-content: center;
+            }
+            .cards{
+                width: 300px;
+                height: 520px;
+                position: relative;
+                margin: 0 auto;
+            }
+            .card-main{
+                top: -145px;
+                right: auto;
+                left: -27%;
+            }
+            .card-sub_card{
+                top: -130px;
+                right: auto;
+                left: 30%;
+            }
+        }
+    }
+    .cards{
+        width: 60%;
+    }
+    .card-main{
+        position: absolute;
+        border-radius: 20px;
+        top: -73px;
+        right: 334px;
+        z-index: 7;
+        aspect-ratio: 345/574;
+        // height: 574px;
+        width: 345px;
+        background: linear-gradient(135deg, #160840 0%, #1A3CB5 100%);
+        border: 1px solid #6095FF;
+        box-shadow: 8px 10px 16px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 76px 0 73px 0;
+        transform: rotate(-23.76deg);
+        .card-image{
+            width: 174px;
+        }
+        .card-title{
+            font-family: 'Helvetica Neue';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 50px;
+            text-align: center;
+            letter-spacing: -0.02em;
+            margin-top: 25px;
+            transform: scale(0.85, 1);
+        }
+        .card-main-logo{
+            margin-top: 40px;
+        }
+    }
+    .card-sub_card{
+        position: absolute;
+        padding: 52px 0 39px 0;
+        top: -48px;
+        right: 150px;
+        display: flex;
+        z-index: 6;
+        flex-direction: column;
+        align-items: center;
+        aspect-ratio: 348/579;
+        width: 348px;
+        // height: 579px;
+        border: 1px solid #fff;
+        background: linear-gradient(208.91deg, rgba(255, 255, 255, 0.51) 3.51%, rgba(255, 255, 255, 0) 111.71%);
+        filter: drop-shadow(12.5618px 15.7022px 25.1235px rgba(0, 0, 0, 0.05));
+        backdrop-filter: blur(9.42133px);
+        border-radius: 31.4044px;
+        transform: rotate(15.09deg);
+        .card-image{
+            height: 487px;
+            // width: 203px;
+        }
+    }
+}
+

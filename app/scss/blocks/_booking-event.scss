@@ -1,0 +1,54 @@
+.booking-event{
+    width: 100%;
+    padding: 113px 0 114px 0;
+    position: relative;
+    overflow: hidden;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1220px;
+        padding: 0px 40px 0px 40px;
+        margin: 0 auto;
+    }
+    .plan, .help{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan-title, .help-title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 39px;
+        letter-spacing: -0.02em;
+    }
+    .help-title{
+        margin-bottom: 11px;
+    }
+    .help-description{
+        margin-bottom: 34px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        span{
+            font-weight: 700;
+        }
+    }
+    .delimiter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .delimiter-line{
+        width: 1px;
+        height: 72.93px;
+        background: rgba(82, 139, 255, 0.67);
+    }
+    .delimiter-text{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: #FC6F2E;
+        margin: 5px 0;
+    }
+}

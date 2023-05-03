@@ -1,0 +1,192 @@
+.reviews{
+    // max-width: 1980px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0px 50px 0;
+    overflow: hidden;
+    .reviews-wrap{
+        
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .reviews-carousel{
+        // position: absolute;
+        // animation-duration: 10s;
+        // animation-name: carousel;
+        // animation-delay: 5s;
+        // animation-fill-mode: forwards;
+        // animation-iteration-count: infinite;
+        // transform: translateX(-50%);
+        // left: 50%;
+        // left: -905px;
+        height: 700px;
+        // display: flex;
+        align-items: center;
+        overflow-x: hidden;
+        // padding: 0 25px;
+        // width: -moz-fit-content;
+        // width: fit-content;
+        .slick-track{
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .slick-list{
+            overflow: hidden;
+            height: 100%;
+        }
+    }
+    .card{
+        width: 1010px;
+        min-height: 470px;
+        border-radius: 50px 0px;
+        padding: 78px 104px 80px 114px;
+        text-align: center;
+        background-color: #141516;
+        position: relative;
+        transition: transform 0.5s ease-out;
+        // overflow: hidden;
+    }
+    
+    // .card>div{
+    //     width: 1010px;
+    //     height: 470px;
+    //     border-radius: 50px 0px;
+    //     padding: 78px 104px 80px 114px;
+    //     text-align: center;
+    //     background-color: #141516;
+    //     position: relative;
+    //     overflow: hidden;
+    // }
+    .card +.card{
+        margin-left: 80px;
+    }
+    .card-center{
+        background: url("../images/reviews/card2.png") center (center/cover) no-repeat;
+        .card-text{
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 32px;
+            margin-bottom: 16px;
+        }
+    }
+    .card-left{
+        background: url("../images/reviews/card1.png") center (center/cover) no-repeat;
+        .card-text{
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 44px;
+            margin-bottom: 32px;
+        }
+    }
+    .card-right{
+        background: url("../images/reviews/card3.png") center (center/cover) no-repeat;
+        .card-text{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 26px;
+        }
+    }
+
+    .prev{
+        transform: rotate(-10deg);
+    }
+    .next{
+        transform: rotate(10deg);
+    }
+
+    .card-content{
+        position: relative;
+        z-index: 100;
+    }
+
+    .card-title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FC6F2E;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+    }
+    
+    
+    .card-name{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+    .card-position{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        color: #43BCFA;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .back-quotes{
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-450px);
+    }
+
+    .reviews-carousel-mobile{
+        display: none;
+        height: 450px;
+        .slick-track{
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .slick-list{
+            overflow: hidden;
+            height: 100%;
+        }
+        .card-mobile{
+            width: 255px;
+            height: 400px;
+            border-radius: 16px;
+            padding: 32px 24px 24px;
+            transition: transform 0.5s ease-out;
+        }
+        .card-mobile + .card-mobile{
+            margin-left: 60px;
+        }
+        .card-mobile-left{
+            background: linear-gradient(169.35deg, #7B61FF -11.25%, #FF00CC 128.59%);
+        }
+        .card-mobile-center{
+            background: linear-gradient(163.28deg, #16BFFD 1.23%, #15D28E 102.66%);
+        }
+        .card-mobile-right{
+            background: linear-gradient(169.35deg, #2970FF -11.25%, #84ADFF 128.59%);
+        }
+        .card-mobile-text{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .card-mobile-name{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 8px;
+        }
+        .card-mobile-title{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 15px;
+        }
+        .card-modile-content{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    
+}
