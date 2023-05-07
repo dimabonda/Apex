@@ -25,6 +25,7 @@
 
 .book-modal{
     display: none;
+    position: relative;
     width: 748px;
     background: #FFFFFF;
     border-top: 10px solid #FC6F2E;
@@ -111,5 +112,177 @@
     }
     .phone{
         grid-area: 2/2/3/3;
+    }
+}
+
+.location-modal{
+    padding: 48px 24px 53px;
+    display: none;
+    height: 651px;
+    width: 514px;
+    // max-height: 651px;
+    // max-width: 514px;
+    background: linear-gradient(150.88deg, #528BFF 1.43%, #3F56FF 121.19%);
+    box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+    border-radius: 12px;
+    .location-modal-header{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .logo-wrapper{
+        position: relative;
+    }
+    .logo-front{
+        position: relative;
+        z-index: 1;
+        width: 56px;
+        height: 56px;
+        background: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(8px);
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .back-logo{
+        position: absolute;
+        width: 56px;
+        height: 56px;
+        left: 10px;
+        top: -10px;
+        background: #FC6F2E;
+        border-radius: 12px;
+        transform: rotate(15deg);
+    }
+    .location-modal-title{
+        font-family: 'Criteria CF';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+    }
+    .location-modal-subtitle{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        margin-bottom: 42px;
+    }
+    .location-list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 36px;
+    }
+    .location-item{
+        padding: 16px;
+        height: 52px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid #FFFFFF;
+        border-radius: 12px;
+        cursor: pointer;
+        label{
+            display: flex;
+            cursor: pointer;
+        }
+        .place{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+        .address{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+            margin: 0 0 0 auto;
+        }
+        input{
+            margin-left: 8px;
+            position: relative;
+            width: 16px;
+            height: 16px;
+            outline: none;
+            margin-top: 2px;
+            cursor: pointer;
+            border: 1px solid #D0D5DD;
+            border-radius: 8px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #fff;
+        }
+        strong{
+            margin-left: 9px;
+        }
+    }
+    .checked{
+        background: #FFFFFF;
+        border: 1px solid #120550;
+        .place, .address{
+            color: #120550;
+        }
+        input{
+            background-color: #120550;
+            border: 1px solid #7F56D9;
+        }
+        input:before{
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/icons/check-mark.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .location-item + .location-item{
+        margin-top: 12px;
+    }
+    .location-btn{
+        height: 40px;
+        top: 510px;
+        background: linear-gradient(100.19deg, #FC6F2E 42.36%, #E84927 106.98%);
+        box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+        border-radius: 5px;
+        border: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .location-btn:focus{
+        outline: none;
+        
+    }
+    
+    .close-modal{
+        height: auto;
+        top: -22px;
+        right: -6px;
+        transition: all 0.3s ease;
+        border-radius: 10px;
+    }
+    .close-modal:hover{
+        background-color: white;
+        path{
+            transition: stroke 0.3s ease;
+            stroke: black;
+        }
     }
 }

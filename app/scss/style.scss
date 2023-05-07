@@ -11,6 +11,10 @@ body{
     overflow: hidden;
 }
 
+.btn-hover:hover{
+    background: linear-gradient(180deg, #FC6F2E 0%, #EC2379 77.4%) !important;
+    border: none;
+}
 
 .button{
     background-color: #FC6F2E;
@@ -22,6 +26,7 @@ body{
     border-radius: 8px 0px;
     height: 48px;
     text-transform: uppercase;
+    cursor: pointer;
     &:focus {
         outline: none;
     }
@@ -29,10 +34,15 @@ body{
         padding: 0 24px;
         img{
             margin-left: 8px;
+            transition: all 0.3s ease;
         }
+    }
+    &-reservation:hover img{
+        transform: rotate(180deg);
     }
     &-events{
         padding: 0 39px;
+        position: relative;
     }
     &-booking{
         padding: 12px 24px;
@@ -63,7 +73,15 @@ body{
         background: #120550;
         padding: 12px 24px;
         margin-right: 16px;
+        svg{
+            margin-right: 6px;
+        }
         
+    }
+    &-gift-card:hover{
+        path{
+            stroke: white;
+        }
     }
     &-check-balance{
         padding: 12px 24px;
@@ -79,11 +97,68 @@ body{
         text-transform: uppercase;
         padding: 12px 24px;
     }
+    
 }
+
+a.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+a.button:hover{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.drop-list{
+    opacity: 0;
+    transition: all ease .3s;
+    position: absolute;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #e4e4e7;
+    box-shadow: 0px 12px 16px -4px rgba(16,24,40,.08), 0px 4px 6px -2px rgba(16,24,40,.03);
+    border-radius: 12px;
+    margin: 0;
+    pointer-events: none;
+    list-style-type: none;
+    z-index: 20;
+}
+.drop-list li {
+    padding: 8px 12px;
+    border-bottom: 0.5px solid #c3c2c1;
+    cursor: pointer;
+}
+.drop-list li:hover {
+    background-color: rgba(0,0,0,.1);
+}
+.drop-list li+li{
+    margin-top: 8px;
+}
+.drop-list a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #18181b;
+}
+.drop-wrap{
+    display: inline-block;
+    cursor: pointer;
+}
+.drop-wrap:hover .drop-list{
+    opacity: 1;
+    pointer-events: visible;
+}
+
 
 @import 'blocks/header'; 
 @import 'blocks/hero';
 @import 'blocks/entertainments';
+@import 'blocks/entertainment-details';
 @import 'blocks/events';
 @import 'blocks/special-events';
 @import 'blocks/reviews';

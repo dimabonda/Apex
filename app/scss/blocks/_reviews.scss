@@ -65,32 +65,37 @@
     }
     .card-center{
         background: url("../images/reviews/card2.png") center (center/cover) no-repeat;
-        .card-text{
-            font-weight: 300;
-            font-size: 22px;
-            line-height: 32px;
-            margin-bottom: 16px;
-        }
+        // .card-text{
+        //     font-weight: 300;
+        //     font-size: 22px;
+        //     line-height: 32px;
+        //     margin-bottom: 16px;
+        // }
     }
     .card-left{
         background: url("../images/reviews/card1.png") center (center/cover) no-repeat;
-        .card-text{
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 44px;
-            margin-bottom: 32px;
-        }
+        // .card-text{
+        //     font-weight: 300;
+        //     font-size: 30px;
+        //     line-height: 44px;
+        //     margin-bottom: 32px;
+        // }
     }
     .card-right{
         background: url("../images/reviews/card3.png") center (center/cover) no-repeat;
-        .card-text{
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 26px;
-            margin-bottom: 26px;
-        }
+        // .card-text{
+        //     font-weight: 400;
+        //     font-size: 20px;
+        //     line-height: 26px;
+        //     margin-bottom: 26px;
+        // }
     }
-
+    .card-text{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
     .prev{
         transform: rotate(-10deg);
     }
@@ -129,9 +134,9 @@
     }
     .back-quotes{
         position: absolute;
-        top: 60px;
+        top: 66px;
         left: 50%;
-        transform: translateX(-450px);
+        transform: translateX(-460px);
     }
 
     .reviews-carousel-mobile{

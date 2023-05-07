@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Criteria CF';
+    src: url('CriteriaCF-Medium.eot');
+    src: url('CriteriaCF-Medium.eot?#iefix') format('embedded-opentype'),
+        url('CriteriaCF-Medium.woff2') format('woff2'),
+        url('CriteriaCF-Medium.woff') format('woff'),
+        url('CriteriaCF-Medium.ttf') format('truetype'),
+        url('CriteriaCF-Medium.svg#CriteriaCF-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Criteria CF';
+    src: url('CriteriaCF-Bold.eot');
+    src: url('CriteriaCF-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CriteriaCF-Bold.woff2') format('woff2'),
+        url('CriteriaCF-Bold.woff') format('woff'),
+        url('CriteriaCF-Bold.ttf') format('truetype'),
+        url('CriteriaCF-Bold.svg#CriteriaCF-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+

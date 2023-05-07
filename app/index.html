@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="fonts/Gotham/stylesheet.css">
     <link rel="stylesheet" href="fonts/HelveticaNeue/stylesheet.css">
+    <link rel="stylesheet" href="fonts/Criteria CF/stylesheet.css">
     <link rel="stylesheet" href="fonts/Inter/stylesheet.css">
     <title>Document</title>
 </head>
@@ -16,17 +17,11 @@
         <div class="header-wrap">
             <div class="header-top">
                 <div class="header-info">
-                    <div class="header-location">
+                    <div class="header-location location_btn">
                         <span>LOCATION: </span><span> MARLBOROUGH</span><img class="chevron" src="images/icons/chevron-down.svg" type="image">
-                        <ul class="drop-list">
-                            <li><a href="">Albany</a></li>
-                            <li><a href="">Marlborough</a></li>
-                            <li><a href="">Syracuse</a></li>
-                            <li><a href="">Virginia Beach</a></li>
-                        </ul>
                     </div>
                     <span class="header-delimiter">|</span>
-                    <div class="header-worktime">OPEN TODAY: 11am - 9pm</div>
+                    <!-- <div class="header-worktime">OPEN TODAY: 11am - 9pm</div> -->
                     <div class="header-worktime-drop">
                         HOURS<img class="chevron" src="images/icons/chevron-down.svg" type="image">
                         <div class="worktime-drop-list">
@@ -87,9 +82,25 @@
                 <div class="booking">
                     <div class="booking-party booking-party_btn">
                         <a href="#">Book a party</a>
-                        <div class="wavy_line"><img src="images/wavy line/line_l.svg" alt="left"><img src="images/wavy line/line_c.svg" alt="center"><img src="images/wavy line/line-r.svg" alt="right"></div>
+                        <div class="wave-wrap">
+                            <img src="images/icons/wave.svg" alt="">
+                            <img src="images/icons/wave.svg" alt="">
+                            <img src="images/icons/wave.svg" alt="">
+                            <img src="images/icons/wave.svg" alt="">
+                        </div>
                     </div>
-                    <button class="button button-reservation">reservations<img src="images/icons/chevron-down.svg" alt=""></button>
+                    <div class="drop-wrap">
+                        <button class="button button-reservation btn-hover">reservations<img src="images/icons/chevron-down.svg" alt=""></button>
+                        <ul class="drop-list">
+                            <li><a href="#">Apex Kids</a></li>
+                            <li><a href="#">Arcade</a></li>
+                            <li><a href="#">Bowling</a></li>
+                            <li><a href="#">Go Kart Racing</a></li>
+                            <li><a href="#">Laser Tag</a></li>
+                            <li><a href="#">Mini Golf</a></li>
+                            <li><a href="#">Sports Simulators</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="logo">
@@ -119,7 +130,7 @@
                 </div>
                 <div class="divider"></div>
             </div>
-            <div class="location-wrap">
+            <div class="location-wrap location_btn">
                 <img src="./images/icons/location.svg" alt="location">
                 <div class="location">Marlborough, MA</div>
             </div>
@@ -131,7 +142,7 @@
                 </li>
                 <li class="menu-mobile-item">
                     <div class="menu-mobile-item_title">
-                        <a href="#">Reservations</a> <img src="./images/icons/chevron-down.svg" alt="chevron">
+                        <a href="pages/play/index.html">Reservations</a> <img src="./images/icons/chevron-down.svg" alt="chevron">
                     </div>
                     <ul class="menu-mobile_drop-list">
                         <li><a href="#apex_kids">Apex Kids</a></li>
@@ -222,6 +233,7 @@
                     <div class="book-modal_location">Marlborough</div>
                     <h3 class="book-modal_title">Book a Party</h3>
                 </div>
+                <img class="close-modal" src="./images/icons/close-black.svg" alt="close">
                 <form action="" class="book-modal_form">
                     <input class="first-name" type="text" placeholder="First name">
                     <input class="last-name" type="text" placeholder="Last Name">
@@ -235,22 +247,66 @@
                     <button class="submit">Submit</button>
                 </form>
             </div>
-            <img class="close-modal" src="./images/icons/close-black.svg" alt="close">
+
+            <div class="location-modal">
+                <div class="location-modal-header">
+                    <div class="logo-wrapper">
+                        <div class="logo-front"><img src="./images/icons/location-icon.svg" alt="front-logo"></div>
+                        <div class="back-logo"></div>
+                    </div>
+                    <svg class="close-modal" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28 16L16 28M16 16L28 28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="location-modal-title">Let us point you in the right direction.</h3>
+                <div class="location-modal-subtitle">FIND YOUR APEX</div>
+                <ul class="location-list">
+                    <li class="location-item">
+                        <label for="marlborough">
+                            <span class="place">Marlborough, MA</span>
+                            <span class="address">21 Apex Drive<strong>(508) 251-8666</strong></span>
+                            <input type="radio" id="marlborough"> 
+                        </label>
+                    </li>
+                    <li class="location-item checked">
+                        <label for="albany">
+                            <span class="place">Albany, NY</span>
+                            <span class="address">1 Crossgates Mall Rd<strong>(518) 426-8666</strong></span>
+                            <input type="radio" id="albany">
+                        </label>
+                    </li>
+                    <li class="location-item">
+                        <label for="syracuse">
+                            <span class="place">Syracuse, NY</span>
+                            <span class="address">9583 Destiny USA Dr<strong>(315) 515-8666</strong></span>
+                            <input type="radio" id="syracuse">
+                        </label>
+                    </li>
+                    <li class="location-item">
+                        <label for="virginia">
+                            <span class="place">Virginia Beach, VA</span>
+                            <span class="address">4621 Columbus St<strong>(757) 678-8666</strong></span>
+                            <input type="radio" id="virginia">
+                        </label>
+                    </li>
+                </ul>
+                <button class="location-btn btn-hover">Continue</button>
+            </div>
+
         </div>
     </div>
+   
     <section class="hero">
         <div class="hero-wrap">
-            <div class="hero-title">
-                <div class="logo_mask">
-                    <div class="video_holder">
-                        <video width="100%" loop muted autoplay>
-                            <source src="https://cdn.coverr.co/videos/coverr-playing-with-fire-9936/1080p.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
+            <div class="bg-banner">
                 <div class="hero-title-overlay">with this place?!?</div>
+                <div class="sub-title">All amazing. No kidding.</div>
             </div>
-            <div class="sub-title">All amazing. No kidding.</div>
+            <div class="bg-video">
+                <video width="100%" loop muted autoplay>
+                    <source src="https://cdn.coverr.co/videos/coverr-playing-with-fire-9936/1080p.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
         <div class="hero-triangle"></div>
     </section>
@@ -260,7 +316,18 @@
                 <h3 class="entertainments-header">Everything you love in one extraordinary palace of fun.</h3>
                 <div class="subheader-wrap">
                     <div class="entertainments-subheader">We built Apex as your escape from the ordinary. Explore and discover 100,000 feet of "are you kidding" stuff around every turn.</div>
-                    <button class="button button-reservation">reservations<img src="images/icons/chevron-down.svg" alt=""></button>
+                    <div class="drop-wrap">   
+                        <button class="button button-reservation btn-hover">reservations<img src="images/icons/chevron-down.svg" alt=""></button>
+                        <ul class="drop-list">
+                            <li><a href="#">Apex Kids</a></li>
+                            <li><a href="#">Arcade</a></li>
+                            <li><a href="#">Bowling</a></li>
+                            <li><a href="#">Go Kart Racing</a></li>
+                            <li><a href="#">Laser Tag</a></li>
+                            <li><a href="#">Mini Golf</a></li>
+                            <li><a href="#">Sports Simulators</a></li>
+                        </ul>
+                    </div>
                 </div>
             </header>
             <div class="carousel">
@@ -271,48 +338,88 @@
                                 <source src="https://player.vimeo.com/external/538561465.sd.mp4?s=786eeae0e3c0f89892c3c0ef13d59127799f3182&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
                             </video>
                             <img class="carousel-item-img" src="images/entertainment/arcade.jpg" alt="arcade"><span>ARCADE</span>
+                            <div class="descr-container">
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+                                <div class="title">Arcade</div>
+                                <a href="#">MORE DETAILS<img src="images/icons/mini-arrow.svg" alt="arrow"></a>
+                            </div>
                         </li>
                         <li class="carousel-item">
                             <video class="carousel-item-video" width="100%" loop muted autoplay>
                                 <source src="https://joy1.videvo.net/videvo_files/video/free/2013-09/small_watermarked/AbstractRotatingCubesVidevo_preview.webm" type="video/mp4">
                             </video>
                             <img class="carousel-item-img" src="images/entertainment/bowling.jpg" alt="bowling"><span>BOWLING</span>
+                            <div class="descr-container">
+                                <div class="description">Bowl with a level of excitement like none other at Apex Entertainment.</div>
+                                <div class="title">Bowling</div>
+                                <a href="#">RESERVE A LANE<img src="images/icons/mini-arrow.svg" alt="arrow"></a>
+                            </div>
                         </li>
                         <li class="carousel-item">
                             <video class="carousel-item-video" width="100%" loop muted autoplay>
                                 <source src="https://joy1.videvo.net/videvo_files/video/free/2012-09/small_watermarked/hd1649_preview.webm" type="video/mp4">
                             </video>
                             <img class="carousel-item-img" src="images/entertainment/laser_tag.jpg" alt="laser_tag"><span>LASER TAG</span>
+                            <div class="descr-container">
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+                                <div class="title">Laser Tag</div>
+                                <a href="#">MORE DETAILS<img src="images/icons/mini-arrow.svg" alt="arrow"></a>
+                            </div>
                         </li>
                         <li class="carousel-item">
                             <video class="carousel-item-video" width="100%" loop muted autoplay>
                                 <source src="https://joy1.videvo.net/videvo_files/video/free/2012-10/small_watermarked/hd1998_preview.webm" type="video/mp4">
                             </video>    
                             <img class="carousel-item-img" src="images/entertainment/bumper_cars.jpg" alt="bumper_cars"><span>BUMPER CARS</span>
+                            <div class="descr-container">
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+                                <div class="title">Bumper Cars</div>
+                                <a href="#">MORE DETAILS<img src="images/icons/mini-arrow.svg" alt="arrow"></a>
+                            </div>
                         </li>
                         <li class="carousel-item">
                             <video class="carousel-item-video" width="100%" loop muted autoplay>
                                 <source src="https://player.vimeo.com/external/538561465.sd.mp4?s=786eeae0e3c0f89892c3c0ef13d59127799f3182&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
                             </video>    
                             <img class="carousel-item-img" src="images/entertainment/go_karts.jpg" alt="go_karts"><span>GO KARTS</span>
+                            <div class="descr-container">
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+                                <div class="title">Go Karts</div>
+                                <a href="#">MORE DETAILS<img src="images/icons/mini-arrow.svg" alt="arrow"></a>
+                            </div>
                         </li>
                         <li class="carousel-item">
                             <video class="carousel-item-video" width="100%" loop muted autoplay>
                                 <source src="https://player.vimeo.com/external/538561465.sd.mp4?s=786eeae0e3c0f89892c3c0ef13d59127799f3182&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
                             </video>
                             <img class="carousel-item-img" src="images/entertainment/ropes_course.jpg" alt="ropes_course"><span>ROPES COURSE</span>
+                            <div class="descr-container">
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+                                <div class="title">Ropes Course</div>
+                                <a href="#">MORE DETAILS<img src="images/icons/mini-arrow.svg" alt="arrow"></a>
+                            </div>
                         </li>
                         <li class="carousel-item">
                             <video class="carousel-item-video" width="100%" loop muted autoplay>
                                 <source src="https://player.vimeo.com/external/538561465.sd.mp4?s=786eeae0e3c0f89892c3c0ef13d59127799f3182&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
                             </video>    
                             <img class="carousel-item-img" src="images/entertainment/mini_golf.jpg" alt="mini_golf"><span>MINI GOLF</span>
+                            <div class="descr-container">
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+                                <div class="title">Mini Golf</div>
+                                <a href="#">MORE DETAILS<img src="images/icons/mini-arrow.svg" alt="arrow"></a>
+                            </div>
                         </li>
                         <li class="carousel-item">
                             <video class="carousel-item-video" width="100%" loop muted autoplay>
                                 <source src="https://player.vimeo.com/external/538561465.sd.mp4?s=786eeae0e3c0f89892c3c0ef13d59127799f3182&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
                             </video>    
                             <img class="carousel-item-img" src="images/entertainment/sports_simulators.jpg" alt="sports_simulators"><span>SPORTS SIMULATORS</span>
+                            <div class="descr-container">
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+                                <div class="title">Sport Simulators</div>
+                                <a href="#">MORE DETAILS<img src="images/icons/mini-arrow.svg" alt="arrow"></a>
+                            </div>
                         </li>
                     </ul>
                 <div class="carousel-ellipse"></div>
@@ -329,69 +436,11 @@
                 <div class="events-item">
                     <h3 class="events-title">Bringing people together?<br/> Bring 'em here.</h3>
                     <div class="events-descr">For parties, meetings, events — get in here and get out of the every day.<br><span>Apex is the antidote to boring.</span></div>
-                    <button class="button button-events">see all party options</button>
+                    <a href="#" class="button button-events btn-hover">see all party options</a>
                 </div>
                 <div class="events-item">
-                    <div class="card">
-                        <div class="card-wrap">
-                            <img src="images/icons/star.svg" alt="star" class="card-star">
-                            <div class="card-title">Kids Birthday Parties</div>
-                            <div class="card-description">Plan a party your gang will remember for years to come.</div>
-                        </div>
-                        <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
-                    </div>
-                </div>
-                <div class="events-item">
-                    <div class="card">
-                        <div class="card-wrap">
-                            <img src="images/icons/star.svg" alt="star" class="card-star">
-                            <div class="card-title">Private Events</div>
-                            <div class="card-description">Functional? Fun? Check 'em both for groups from 10 to 200.</div>
-                        </div>
-                        <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
-                    </div>
-                    <div class="card">
-                        <div class="card-wrap">
-                            <img src="images/icons/star.svg" alt="star" class="card-star">
-                            <div class="card-title">Field Trips</div>
-                            <div class="card-description">Bring your busload for an extraordinary field trip.</div>
-                        </div>
-                        <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
-                    </div>
-                </div>
-                <div class="events-item">
-                    <div class="card">
-                        <div class="card-wrap">
-                            <img src="images/icons/star.svg" alt="star" class="card-star">
-                            <div class="card-title">Corporate Events</div>
-                            <div class="card-description">Flexible but fun. We've got the antidote to ordinary company get togethers.</div>
-                        </div>
-                        <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
-                    </div>
-                    <div class="card">
-                        <div class="card-wrap">
-                            <img src="images/icons/star.svg" alt="star" class="card-star">
-                            <div class="card-title">Meeting Spaces</div>
-                            <div class="card-description">Don't let all the fun fool you. We're ready for meetings, too.</div>
-                        </div>
-                        <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
-                    </div>
-                    <div class="card">
-                        <div class="card-wrap">
-                            <img src="images/icons/star.svg" alt="star" class="card-star">
-                            <div class="card-title">Package Options</div>
-                            <div class="card-description">Plan a great get together with a great package price.</div>
-                        </div>
-                        <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="events-mobile">
-                <h3 class="events-title">Bringing people together?<br/> Bring 'em here.</h3>
-                <div class="events-descr">For parties, meetings, events — get in here and get out of the every day.<br><span>Apex is the antidote to boring.</span></div>
-                <button class="button button-events">see all party options</button>
-                <ul class="events-mobile-list">
-                    <li class="events-mobile-item">
+                    <a href="#" class="card-link">
+                        <div class="background pink"></div>
                         <div class="card">
                             <div class="card-wrap">
                                 <img src="images/icons/star.svg" alt="star" class="card-star">
@@ -400,8 +449,11 @@
                             </div>
                             <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
                         </div>
-                    </li>
-                    <li class="events-mobile-item">
+                    </a>
+                </div>
+                <div class="events-item">
+                    <a href="#" class="card-link">
+                        <div class="background green"></div>
                         <div class="card">
                             <div class="card-wrap">
                                 <img src="images/icons/star.svg" alt="star" class="card-star">
@@ -410,8 +462,9 @@
                             </div>
                             <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
                         </div>
-                    </li>
-                    <li class="events-mobile-item">
+                    </a>
+                    <a href="#" class="card-link">
+                        <div class="background violet"></div>
                         <div class="card">
                             <div class="card-wrap">
                                 <img src="images/icons/star.svg" alt="star" class="card-star">
@@ -420,8 +473,11 @@
                             </div>
                             <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
                         </div>
-                    </li>
-                    <li class="events-mobile-item">
+                    </a>
+                </div>
+                <div class="events-item">
+                    <a href="#" class="card-link">
+                        <div class="background blue"></div>
                         <div class="card">
                             <div class="card-wrap">
                                 <img src="images/icons/star.svg" alt="star" class="card-star">
@@ -430,8 +486,9 @@
                             </div>
                             <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
                         </div>
-                    </li>
-                    <li class="events-mobile-item">
+                    </a>
+                    <a href="#" class="card-link">
+                        <div class="background pink"></div>
                         <div class="card">
                             <div class="card-wrap">
                                 <img src="images/icons/star.svg" alt="star" class="card-star">
@@ -440,8 +497,9 @@
                             </div>
                             <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
                         </div>
-                    </li>
-                    <li class="events-mobile-item">
+                    </a>
+                    <a href="#" class="card-link">
+                        <div class="background green"></div>
                         <div class="card">
                             <div class="card-wrap">
                                 <img src="images/icons/star.svg" alt="star" class="card-star">
@@ -450,6 +508,91 @@
                             </div>
                             <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
                         </div>
+                    </a>
+                </div>
+            </div>
+            <div class="events-mobile">
+                <h3 class="events-title">Bringing people together?<br/> Bring 'em here.</h3>
+                <div class="events-descr">For parties, meetings, events — get in here and get out of the every day.<br><span>Apex is the antidote to boring.</span></div>
+                <a href="#" class="button button-events btn-hover">see all party options</a>
+                <ul class="events-mobile-list">
+                    <li class="events-mobile-item">
+                        <a href="#" class="card-link">
+                            <div class="background pink"></div>
+                            <div class="card">
+                                <div class="card-wrap">
+                                    <img src="images/icons/star.svg" alt="star" class="card-star">
+                                    <div class="card-title">Kids Birthday Parties</div>
+                                    <div class="card-description">Plan a party your gang will remember for years to come.</div>
+                                </div>
+                                <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="events-mobile-item">
+                        <a href="#" class="card-link">
+                            <div class="background green"></div>
+                            <div class="card">
+                                <div class="card-wrap">
+                                    <img src="images/icons/star.svg" alt="star" class="card-star">
+                                    <div class="card-title">Private Events</div>
+                                    <div class="card-description">Functional? Fun? Check 'em both for groups from 10 to 200.</div>
+                                </div>
+                                <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="events-mobile-item">
+                        <a href="#" class="card-link">
+                            <div class="background violet"></div>
+                            <div class="card">
+                                <div class="card-wrap">
+                                    <img src="images/icons/star.svg" alt="star" class="card-star">
+                                    <div class="card-title">Field Trips</div>
+                                    <div class="card-description">Bring your busload for an extraordinary field trip.</div>
+                                </div>
+                                <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="events-mobile-item">
+                        <a href="#" class="card-link">
+                            <div class="background blue"></div>
+                            <div class="card">
+                                <div class="card-wrap">
+                                    <img src="images/icons/star.svg" alt="star" class="card-star">
+                                    <div class="card-title">Corporate Events</div>
+                                    <div class="card-description">Flexible but fun. We've got the antidote to ordinary company get togethers.</div>
+                                </div>
+                                <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="events-mobile-item">
+                        <a href="#" class="card-link">
+                            <div class="background pink"></div>
+                            <div class="card">
+                                <div class="card-wrap">
+                                    <img src="images/icons/star.svg" alt="star" class="card-star">
+                                    <div class="card-title">Meeting Spaces</div>
+                                    <div class="card-description">Don't let all the fun fool you. We're ready for meetings, too.</div>
+                                </div>
+                                <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="events-mobile-item">
+                        <a href="#" class="card-link">
+                            <div class="background green"></div>
+                            <div class="card">
+                                <div class="card-wrap">
+                                    <img src="images/icons/star.svg" alt="star" class="card-star">
+                                    <div class="card-title">Package Options</div>
+                                    <div class="card-description">Plan a great get together with a great package price.</div>
+                                </div>
+                                <div class="card-details">DETAILS<img src="images/icons/details-arrow.svg" alt="details"></div>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -480,7 +623,7 @@
                             <div class="card-title">Dueling Pianos</div>
                             <div class="card-descr"><span>Friday, November 18</span><br>
                                 Dinner and a show with dueling pianos, The Rock and Roll Piano Show!</div>
-                            <div class="card-details">Details<img src="images/icons/details-arrow.svg" alt="details"></div>
+                            <a href="#" class="card-details">Details<img src="images/icons/details-arrow.svg" alt="details"></a>
                         </div>
                     </div>
                     <div class="card">
@@ -488,7 +631,7 @@
                         <div class="card-wrap">
                             <div class="card-title">Book an amazing Holiday Party!</div>
                             <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                            <div class="card-details">Details<img src="images/icons/details-arrow.svg" alt="details"></div>
+                            <a href="#" class="card-details">Details<img src="images/icons/details-arrow.svg" alt="details"></a>
                         </div>
                     </div>
                     <div class="card card_active">
@@ -496,7 +639,7 @@
                         <div class="card-wrap">
                             <div class="card-title">Military Mondays Specials</div>
                             <div class="card-descr">$2 beers and buy-one-get-one free pizza for military families. No kidding.</div>
-                            <div class="card-details">Details<img src="images/icons/details-arrow.svg" alt="details"></div>
+                            <a href="#" class="card-details">Details<img src="images/icons/details-arrow.svg" alt="details"></a>
                         </div>
                     </div>
                 </div>
@@ -520,7 +663,7 @@
                             <div class="card-title">Dueling Pianos</div>
                             <div class="card-descr"><span>Friday, November 18</span><br>
                                 Dinner and a show with dueling pianos, The Rock and Roll Piano Show!</div>
-                            <div class="card-details">Details<img src="images/icons/details-arrow.svg" alt="details"></div>
+                            <a href="#" class="card-details">Details<img src="images/icons/details-arrow.svg" alt="details"></a>
                         </div>
                     </div>
                     <div class="card">
@@ -528,7 +671,7 @@
                         <div class="card-wrap">
                             <div class="card-title">Book an amazing Holiday Party!</div>
                             <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                            <div class="card-details">Details<img src="images/icons/details-arrow.svg" alt="details"></div>
+                            <a href="#" class="card-details">Details<img src="images/icons/details-arrow.svg" alt="details"></a>
                         </div>
                     </div>
                     <div class="card card_active">
@@ -536,7 +679,7 @@
                         <div class="card-wrap">
                             <div class="card-title">Military Mondays Specials</div>
                             <div class="card-descr">$2 beers and buy-one-get-one free pizza for military families. No kidding.</div>
-                            <div class="card-details">Details<img src="images/icons/details-arrow.svg" alt="details"></div>
+                            <a href="#" class="card-details">Details<img src="images/icons/details-arrow.svg" alt="details"></a>
                         </div>
                     </div>
                 </div>
@@ -553,7 +696,7 @@
                 <div class="card card-left card-to_left">
                     <div class="card-content">
                         <div class="card-title">Boston Children’s Hospital</div>
-                        <div class="card-text">We are so grateful for the generosity of Apex Entertainment. Every dollar raised through their program has 100% impact, furthering the hospital’s mission to treat all children, no matter what condition.</div>
+                        <div class="card-text">We are so grateful for the generosity of Apex Entertainment. Every dollar raised through their program has 100% impact, furthering the hospital’s mission to treat all children, no matter what condition. I highly recommend Apex Entertainment for team events.</div>
                         <div class="card-name">Michael Bornhorst</div>
                         <div class="card-position">AVP, Boston Children’s Hospital Trust</div>
                     </div>
@@ -561,7 +704,7 @@
                 <div class="card card-center next">
                     <div class="card-content">
                         <div class="card-title">Residence Inn by Marriott </div>
-                        <div class="card-text">We have numerous sports teams staying with us and we often send them to Apex Entertainment to burn off energy during tournament weekends. The staff at Apex has gone above and beyond to accommodate many of the sports teams whether to play laser tag, go bowling, play in the arcade or book a team dinner. I highly recommend Apex Entertainment for team events.</div>
+                        <div class="card-text">We have numerous sports teams staying with us and we often send them to Apex Entertainment to burn off energy during tournament weekends. The staff at Apex has gone above and beyond to accommodate many of the sports teams whether to play laser tag, go bowling, play in the arcade or book a team dinner.</div>
                         <div class="card-name">Jenney Cataldo</div>
                         <div class="card-position">Area Director of Sales</div>
                     </div>
@@ -569,7 +712,7 @@
                 <div class="card card-right card-to_right prev">
                     <div class="card-content">
                         <div class="card-title">Coca-cola company</div>
-                        <div class="card-text">The Apex experience that you and your team provided for my customer was over the top! The business meeting room accommodations were perfect as the spacious and comfortable room setting plus the excellent AV capabilities allowed for a very enjoyable and effective business meeting. The Apex Entertainment offerings, bowling, simulation games, laser tag and the additional games provided an extremely fun and action packed team building atmosphere of which my company would utilize for their team in the future!</div>
+                        <div class="card-text">The Apex experience that you and your team provided for my customer was over the top! The business meeting room accommodations were perfect as the spacious and comfortable room setting plus the excellent AV capabilities allowed for a very enjoyable and effective business meeting.</div>
                         <div class="card-name">Arty Tomasetta</div>
                         <div class="card-position">Account Executive at Coca-Cola Refreshments</div>
                     </div>
@@ -613,7 +756,7 @@
         <div class="container">
             <div class="plan">
                 <h3 class="plan-title">Plan and book your event</h3>
-                <button class="button button-booking">book today</button>
+                <a href="#" class="button button-booking btn-hover">book today</a>
             </div>
             <div class="delimiter">
                 <div class="delimiter-line"></div>
@@ -623,7 +766,7 @@
             <div class="help">
                 <h3 class="help-title">Get help from our planners</h3>
                 <div class="help-description">Call our booking team at <span>(508) 251-8666</span> or email us:</div>
-                <button class="button button-help_email">EMAIL INQUIRY</button>
+                <a href="#" class="button button-help_email btn-hover">EMAIL INQUIRY</a>
             </div>
         </div>
     </section>
@@ -636,8 +779,11 @@
                     <div class="gift-card-lable"></div>
                     <div class="gift-card-description">Spread the love, gifting your buddies an Apex <br/>Fun Pass.</div>
                     <div class="gift-card-buttons_group">
-                        <button class="button button-gift button-gift-card"><img src="images/icons/Postal_envelope_black.svg" alt="Postal_envelope_black">Order gift card<input type="image" src="images/icons/chevron-down.svg" alt="hevron-down"></button>
-                        <button class="button button-gift button-check-balance"><img src="images/icons/Postal_envelope_white.svg" alt="Postal_envelope_white">CHECK BALANCE<input type="image" src="images/icons/chevron-down.svg" alt="hevron-down"></button>
+                        <a href="#" class="button button-gift button-gift-card btn-hover">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.917 13.0002L12.3813 8.00016M7.61937 8.00016L2.08369 13.0002M1.66699 3.8335L8.47109 8.59636C9.02207 8.98205 9.29756 9.17489 9.59721 9.24959C9.8619 9.31557 10.1387 9.31557 10.4034 9.24959C10.7031 9.17489 10.9786 8.98205 11.5296 8.59637L18.3337 3.8335M5.66699 14.6668H14.3337C15.7338 14.6668 16.4339 14.6668 16.9686 14.3943C17.439 14.1547 17.8215 13.7722 18.0612 13.3018C18.3337 12.767 18.3337 12.067 18.3337 10.6668V5.3335C18.3337 3.93336 18.3337 3.2333 18.0612 2.69852C17.8215 2.22811 17.439 1.84566 16.9686 1.60598C16.4339 1.3335 15.7338 1.3335 14.3337 1.3335H5.66699C4.26686 1.3335 3.5668 1.3335 3.03202 1.60598C2.56161 1.84566 2.17916 2.22811 1.93948 2.69852C1.66699 3.2333 1.66699 3.93336 1.66699 5.3335V10.6668C1.66699 12.067 1.66699 12.767 1.93948 13.3018C2.17916 13.7722 2.56161 14.1547 3.03202 14.3943C3.5668 14.6668 4.26686 14.6668 5.66699 14.6668Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>Order gift card<input type="image" src="images/icons/chevron-down.svg" alt="hevron-down"></a>
+                        <a href="#" class="button button-gift button-check-balance btn-hover"><img src="images/icons/Postal_envelope_white.svg" alt="Postal_envelope_white">CHECK BALANCE<input type="image" src="images/icons/chevron-down.svg" alt="hevron-down"></a>
                     </div>
                 </div>
                 <div class="cards">
@@ -685,7 +831,7 @@
                 </div>
                 <form class="registration-form">
                         <input type="text" class="registration-input" placeholder="Email address">
-                        <button class="button registration-button">subscirbe</button>
+                        <button class="button registration-button btn-hover">subscirbe</button>
                 </form>
             </div>
             <div class="divider"></div>
@@ -758,9 +904,15 @@
                 <div class="logo-wrapper">
                     <img class="footer-logo" src="images/footer-logo.svg" alt="footer-logo">
                     <div class="footer-social">
-                        <img src="images/icons/facebook.svg" alt="facebook">
-                        <img src="images/icons/twitter.svg" alt="twitter">
-                        <img src="images/icons/instagram.svg" alt="instagram">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="images/icons/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img src="images/icons/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="images/icons/instagram.svg" alt="instagram">
+                        </a>
                     </div>
                 </div>
                 <div class="footer-year">© 2023 Apex Entertainment. All rights reserved.</div>

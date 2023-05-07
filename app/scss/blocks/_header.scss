@@ -1,5 +1,6 @@
 .header{
     min-width: 100%;
+    top: 0px;
     position: fixed;
     z-index: 30;
     &-top{
@@ -28,6 +29,7 @@
             font-weight: 700;
             color: #BAFF00;
             margin-left: 6px;
+            margin-right: 8px;
         }
         input{
             margin-left: 8px;
@@ -42,15 +44,19 @@
         font-size: 12px;
         font-weight: 500;
         color: #fff;
-        margin-right: 6px;
-        margin-left: 2px;
+        margin-right: 12px;
+        margin-left: 12px;
         margin-bottom: 2px;
     }
     &-worktime-drop{
-        display: none;
+        display: block;
         font-size: 12px;
         font-weight: 500;
         color: #fff;
+        cursor: pointer;
+        &>img{
+            margin-left: 8px;
+        }
     }
     
     &-worktime-drop:hover{
@@ -70,6 +76,7 @@
         color: #fff;
     }
     .worktime-drop-list{
+        cursor: pointer;
         color: #18181B;
         pointer-events: none;
         transition: opacity 0.3s ease;
@@ -97,7 +104,7 @@
             line-height: 14px;
         }
     }
-        
+
     .logo{
         position: absolute;
         padding: 22px 72px 70px 72px;
@@ -247,24 +254,28 @@
         color: #18181B;
     }
 
-    .header-location:hover {
-        img{
-            content: url('../images/icons/chevron-down-green.svg');
-            transform: rotate(180deg);
-        }
-        .drop-list{
-            opacity: 1;
-            pointer-events: visible;
-            top: 15px;
-        }
+    // .header-location:hover {
+    //     img{
+    //         content: url('../images/icons/chevron-down-green.svg');
+    //         transform: rotate(180deg);
+    //     }
+    //     .drop-list{
+    //         opacity: 1;
+    //         pointer-events: visible;
+    //         top: 15px;
+    //     }
 
-    }
+    // }
 
     .booking{
         display: flex;
         align-items: center;
         &-party{
             margin-right: 34.5px;
+            width: 97px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
             a{
                 color: #fff;
                 letter-spacing: 0.5px;
@@ -276,10 +287,26 @@
         &-party:hover a{
             color:#B3E42E;
         }
+        &-party:hover{
+            .wave-wrap{
+                transform: translateX(-291px)
+            }
+        }
+        .drop-list{
+            right: 64px;
+        }
+    }
+    .wave-wrap{
+        display: flex;
+        margin-top: 6px;
+        align-items: center;
+        position: relative; 
+        transition: all 0.3s ease;
     }
     .header-mobile{
         display: none;
         padding: 20px 30px 44px 25px;
+        top: 0px;
         position: fixed;
         background: linear-gradient(180deg, #FC6F2E 45.85%, #FC375E 111.71%);
         height: 150px;
@@ -322,6 +349,7 @@
         }
         .location-wrap{
             display: flex;
+            cursor: pointer;
             flex-direction: row;
             justify-content: center;
             align-items: center;
@@ -413,4 +441,6 @@
         transform: rotate(180deg);
     }
 }
+
+
 

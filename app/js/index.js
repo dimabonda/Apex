@@ -4,8 +4,9 @@ $(document).ready(function(){
         // slidesToShow: 3,
         arrows: false,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
+        swipeToSlide: true,
         variableWidth: true,
     });
     $('.events-mobile-list').slick({
@@ -13,6 +14,7 @@ $(document).ready(function(){
         arrows: false,
         slidesToScroll: 1,
         variableWidth: true,
+        swipeToSlide: true,
     });
     $('.reviews-carousel').slick({
         // slidesToShow: 3,
@@ -29,7 +31,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         variableWidth: true,
         centerMode: true,
-        
+        swipeToSlide: true,
     });
     $('.reviews-carousel').on('beforeChange', function() {
         $('.reviews-carousel .slick-slide').removeClass('prev next');

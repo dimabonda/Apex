@@ -1,10 +1,55 @@
-
-@media(max-width: 1440px){
-    .hero{
-        background-position: right;
+@media (max-height: 980px){
+    .book-modal{
+        padding: 30px 48px 40px;
     }
-    .hero .hero-wrap{
-        width: 100%;
+    .book-modal .help{
+        margin-bottom: 10px;
+    }
+    .book-modal .book-modal_title{
+        margin-bottom: 12px;
+    }
+    .book-modal .description{
+        height: 150px;
+    }
+    .book-modal .book-modal_form{
+        row-gap: 12px;
+    }
+}
+
+@media (max-height: 780px){
+    .book-modal{
+        padding: 20px 40px 30px;
+    }
+    .book-modal .book-modal_title{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .book-modal .help {
+        margin-bottom: 0px;
+    }
+    .book-modal .description {
+        height: 120px;
+    }
+}
+
+
+@media(max-width: 1360px){
+    .header .search-input{
+        max-width: 145px;
+    }
+    .header .nav-item+.nav-item{
+        margin-left: 18px;
+    }
+    .header-location span:last-of-type{
+        margin-left: 4px;
+        margin-right: 2px;
+    }
+    .header-delimiter{
+        margin-right: 8px;
+        margin-left: 6px;
+    }
+    .header-worktime-drop>img {
+        margin-left: 2px;
     }
 }
 
@@ -21,7 +66,7 @@
         font-size: 12px;
     }
     .header-wrap .nav-item+.nav-item{
-        margin-left: 15px
+        margin-left: 8px
     }
     .header-wrap .nav-item{
         display: flex;
@@ -58,6 +103,9 @@
         font-size: 14px;
     }
 
+    .header-wrap .booking .drop-list{
+        right: 20px;
+    }
     ////entertainments
 
 
@@ -178,10 +226,9 @@
     }
 
         ///hero
-    .hero{
-        aspect-ratio: 1.3 / 1;
+    .hero .hero-wrap{
+        margin-top: 80px;
     }
-
     ///entertainments 
     
     .entertainments .header-wrap{
@@ -201,13 +248,20 @@
     }
 
     .entertainments .button-reservation{
-        display: block;
+        // display: block;
         margin: 0 auto;
+    }
+    .entertainments .subheader-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .entertainments .carousel{
-        padding: 45px 0px 45px 16px;
-        
+        padding: 45px 0px;
+    }
+    .entertainments .carousel-list .slick-list{
+        padding-left: 20px;
     }
 
     .entertainments .carousel-ellipse{
@@ -225,6 +279,25 @@
             bottom: 50px;
         }
     }
+    .entertainments .descr-container{
+        padding: 50px 50px 50px 25px;
+        .description{
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .title{
+            font-size: 40px;
+            line-height: 50px;
+            margin-top: 8px;
+        }
+        a{
+            font-size: 13px;
+            line-height: 18px;
+            margin-top: 8px;
+        }
+    }
+    
+    
 
     ////events
     .events .events-wrapper{
@@ -264,18 +337,17 @@
 
 @media(max-width: 768px){
     ///hero
-    .hero {
-        aspect-ratio: 1.1/1;
+    .hero .hero-wrap{
+        margin-top: 100px;
     }
+   
     .hero-triangle{
         -webkit-clip-path: polygon(0 0, 100% 95%, 100% 100%, 0% 100%);
         clip-path: polygon(0 0, 100% 95%, 100% 100%, 0% 100%);
         // -webkit-clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
         // clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
     }   
-    .hero .logo_mask{
-        width: 95%;
-    }
+    
 
     //entertainments
     .entertainments .entertainments-header{
@@ -311,11 +383,11 @@
         padding: 40px 60px;
     }
     .reviews .card .card-text{
-        font-size: 16px;
+        font-size: 20px;
     }
-    .reviews .card-left .card-text{
-        font-size: 24px;
-    }
+    // .reviews .card-left .card-text{
+    //     font-size: 24px;
+    // }
     .reviews .back-quotes{
         transform: translateX(-250px);
     }
@@ -373,18 +445,34 @@
         border-radius: 0px;
         border-top: none;
     }
-
+    .location-modal{
+        width: 100%;
+        min-height: 100%;
+        border-radius: 0px;
+    }
 }
 
 @media (max-width: 575px){
     //hero
-    .hero {
-        aspect-ratio: 0.98/1;
+    .hero .bg-banner{
+        background-image: url(../images/bg-mobile.png);
+        aspect-ratio: 377/388;
+    }
+    .hero .hero-title-overlay{
+        font-size: calc(30 / 375 * 100vw);
+        right: calc(10 / 375 * 100vw);
+        bottom: calc(76 / 375 * 100vw);
+        line-height: calc(90 / 375 * 100vw);
     }
     .hero .sub-title{
-        top: 0px;
+        font-size: calc(16 / 375 * 100vw);
+        left: calc(18 / 375 * 100vw);
+        bottom: calc(60 / 375 * 100vw);
+        line-height: calc(24 / 375 * 100vw);
     }
-
+    .hero .bg-video{
+        top: calc(110 / 575 * 100vw);
+    }
     //entertainments
     .entertainments .header-wrap{
         padding: 0px 15px 0px 17px;
@@ -411,8 +499,41 @@
             bottom: 40px;
         }
     }
+    .entertainments .carousel-list .slick-list{
+        padding-left: 10px;
+    }
+    .entertainments .carousel-item>img{
+        border-radius: 11.3px;
+    }
     .entertainments .carousel-item+.carousel-item{
         margin-left: 21px;
+    }
+    .entertainments .drop-wrap{
+        max-width: 375px;
+        width: 100%;
+    }
+
+    .entertainments .descr-container{
+        padding: 35px 35px 35px 19px;
+        .description{
+            font-size: 10px;
+            line-height: 14px;
+        }
+        .title{
+            font-size: 32px;
+            line-height: 40px;
+            margin-top: 6px;
+        }
+        a{
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+            margin-top: 9px;
+            display: flex;
+            img{
+                display: inline;
+            }
+        }
     }
 
 
@@ -425,8 +546,11 @@
     }
 
     .events .button-events{
-        display: block;
-        margin: 0 auto;
+        // display: block;
+        // margin: 0 auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 14px;
         max-width: 375px;
         width: 100%;
@@ -633,6 +757,13 @@
     .book-modal label{
         font-size: 12px;
     }
+
+    .location-modal .location-modal-title{
+        font-size: 34px;
+    }
+    .location-modal .location-item .place, .location-modal .location-item .address{
+        font-size: 12px;
+    }
     // .button-reservation img {
     //     margin-left: 4px;
     // }
@@ -645,10 +776,7 @@
 
 @media(max-width: 440px){
     //hero
-    .hero {
-        aspect-ratio: 0.89/1;
-    }
-
+    
     //
     .entertainments .entertainments-header{
         font-size: 32px;
@@ -686,4 +814,21 @@
     .book-modal input{
         margin-bottom: 14px;
     }
+    .location-modal{
+        padding: 40px 16px 30px;
+    }
+    .location-modal .location-modal-title{
+        font-size: 32px;
+    }
+    .location-modal .location-item .place, .location-modal .location-item .address{
+        font-size: 11px;
+    }
+    .location-modal .location-item{
+        height: 40px;
+        padding: 10px 8px;
+    }
+    .location-modal .location-item strong{
+        margin-left: 4px;
+    }
 }
+

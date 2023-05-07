@@ -8,10 +8,9 @@ window.addEventListener("DOMContentLoaded", () => {
     const searchMobileWrapper = document.querySelector('.header-mobile .search-mobile');
     const logoSearchIcon = document.querySelector('.logo-container>img');
     const searchInputMobile = document.querySelector('.header-mobile .search-input');
-    const worktime = document.querySelector('.header-worktime');
     const worktimeDropList = document.querySelector('.header-worktime-drop');
-    const lastNavItem = document.querySelector('.nav-item:last-child');
-
+    
+    
     //only with arrows
     const filteredTitles = Array.from(titles).filter(item => item.lastElementChild.tagName === "IMG" );
     const closeSubLists = (index) => {
@@ -27,7 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
         closeSubLists(-1)
         hamburger.classList.toggle('hamburger_hidden');
         if (logoSearchIcon.src.split('/')[logoSearchIcon.src.split('/').length - 1] == 'search.svg'){
-            logoSearchIcon.src = './images/icons/close.svg'
+            logoSearchIcon.src = './images/icons/close.svg';
         } else {
             logoSearchIcon.src = './images/icons/search.svg';
         }
@@ -39,20 +38,21 @@ window.addEventListener("DOMContentLoaded", () => {
         body.classList.toggle('hidden');
     }
 
-    searchIcon.addEventListener("click", () => {
+    searchIcon.addEventListener("click", (e) => {
+        e.stopPropagation()
         searchIcon.classList.toggle("search-icon_active");
         if (searchIcon.classList.contains("search-icon_active")){
             searchInput.style.display = "block";
-
-            worktime.style.display = "none";
-            worktimeDropList.style.display = "block";
-            lastNavItem.style.display = "none";
         } else {
             searchInput.style.display = "none";
-
-            worktime.style.display = "block";
-            worktimeDropList.style.display = "none";
-            lastNavItem.style.display = "block";
+            searchInput.value = "";
+        }
+    })
+    body.addEventListener("click", (event) => {
+        if(!event.target.classList.contains("search-input")){
+            searchIcon.classList.remove("search-icon_active");
+            searchInput.style.display = "none";
+            searchInput.value = "";
         }
     })
 
