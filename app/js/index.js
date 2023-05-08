@@ -3,9 +3,9 @@ $(document).ready(function(){
     $('.carousel-list').slick({
         // slidesToShow: 3,
         arrows: false,
-        slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 3000,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 3000,
         swipeToSlide: true,
         variableWidth: true,
     });
