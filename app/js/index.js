@@ -1,4 +1,7 @@
 
+
+
+
 $(document).ready(function(){
     $('.carousel-list').slick({
         // slidesToShow: 3,
@@ -47,4 +50,12 @@ $(document).ready(function(){
         $('.reviews-carousel-mobile .slick-active').prev().addClass('prev');
         $('.reviews-carousel-mobile .slick-active').next().addClass('next');
     });
+    $('.entertainment-details-cards-mobile').slick({
+        dots: false,
+        infinite: false,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        swipe: false,
+      });
 });

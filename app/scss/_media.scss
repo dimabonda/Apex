@@ -116,6 +116,57 @@
         font-size: 22px;
     }
 
+    .entertainment-details .main-card{
+        height: calc(445.58 / 1200 * 100vw);
+        padding: calc(59 / 1200 * 100vw) 0px calc(56 / 1200 * 100vw) 0px;
+        left: calc(68 / 1200 * 100vw);
+        border-radius: calc(15.5237 / 1200 * 100vw);
+
+        top: calc(37 / 1200 * 100vw);
+    }
+    .entertainment-details .main-card-x{
+        width: calc(135 / 1200 * 100vw);
+        margin-bottom: calc(22.5 / 1200 * 100vw);
+    }
+    .entertainment-details .main-card-text{
+        font-size: calc(74.5136 / 1200 * 100vw);
+        line-height: calc(39 / 1200 * 100vw);
+        margin-bottom: calc(51/ 1200 * 100vw);
+        
+    }
+    .entertainment-details .main-card-logo {
+        width: calc(139/ 1200 * 100vw);
+    }
+    .entertainment-details .sub-card{
+        left: calc(208 / 1200 * 100vw);
+        height: calc(449.45 / 1200 * 100vw);
+        padding: calc(32 / 1200 * 100vw) 0px calc(30 / 1200 * 100vw) 0px;
+        border-radius: calc(24.3756 / 1200 * 100vw);
+
+        top: calc(71 / 1200 * 100vw);
+        img{
+            width: calc(170 / 1200 * 100vw);
+        }
+    }
+    .entertainment-details .cards-images{
+        min-width: calc(530 / 1200 * 100vw);
+    }
+    .entertainment-details .entertainment-details-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .entertainment-details .entertainment-details-title{
+        max-width: 100%;
+        text-align: center;
+    }
+    .entertainment-details .entertainment-details-subtitle{
+        text-align: center;
+    }
+    .entertainment-details .entertainment-details-descr p{
+        max-width: 100%;
+        text-align: center;
+    }
+
 ///special-events
     .special-events .card-title{
         font-size: 40px;
@@ -229,6 +280,9 @@
     .hero .hero-wrap{
         margin-top: 80px;
     }
+    .hero-play .hero-play-wrap{
+        margin-top: 60px;
+    }
     ///entertainments 
     
     .entertainments .header-wrap{
@@ -296,8 +350,120 @@
             margin-top: 8px;
         }
     }
-    
-    
+////////////////entertainment-details
+    .entertainment-details .entertainment-details-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #card-arcade, #card-bumper_cars, #card-ropes_course{
+        justify-self: end;
+    }
+    #card-bowling, #card-kart_racing, #card-sports_simulators{
+        justify-self: start;
+    }
+
+    #info-apex_kids{
+        grid-area: 2/1/3/3;
+    }
+    #info-arcade{
+        grid-area: 2/1/3/3;
+        border-radius: 20px 0px 20px 20px;
+    }
+    #info-bowling{
+        border-radius: 0px 20px 20px 20px;
+        grid-area: 3/1/4/3;
+    }
+    #info-bumper_cars{
+        border-radius: 20px 0px 20px 20px;
+        grid-area: 3/1/4/3;
+    }
+    #info-kart_racing{
+        border-radius: 0px 20px 20px 20px;
+        grid-area: 4/1/5/3;
+    }
+    #info-laser_tag{
+        grid-area: 4/1/5/3;
+    }
+    #info-mini_golf{
+        grid-area: 5/1/6/3;
+    }
+    #info-ropes_course{
+        border-radius: 20px 0px 20px 20px;
+        grid-area: 5/1/6/3;
+    }
+    #info-sports_simulators{
+        border-radius: 0px 20px 20px 20px;
+        grid-area: 6/1/7/3;
+    }
+    .entertainment-details .card-info{
+        padding: 60px 40px 20px;
+    }
+    .entertainment-details .card-info-main{
+        margin-top: 30px;
+    }
+    .entertainment-details .header-title{
+        font-size: 42px;
+    }
+    .entertainment-details .header-descr{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .entertainment-details .header-descr-wrap{
+        margin-top: 20px;
+    }
+    .entertainment-details .main-title{
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .entertainment-details .main-description{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .entertainment-details .main-description-top{
+        margin-bottom: 10px;
+    }
+    .entertainment-details .main-description-list{
+        margin-bottom: 10px;
+    }
+    .entertainment-details .main-description-bottom {
+        margin-bottom: 10px;
+    }
+    .entertainment-details .card-info-main-img{
+        min-width: 340px;
+        height: 360px;
+    }
+    .entertainment-details .footer-description{
+        padding-top: 50px;
+    }
+    .entertainment-details .footer-description-title{
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+    .entertainment-details .footer-description p{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .entertainment-details .footer-description i{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .entertainment-details .entertainment-details-header{
+        margin-bottom: 50px;
+        grid-gap: 16px;
+    }
+    .entertainment-details .card-descr{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .entertainment-details .entertainment-details-cards{
+        row-gap: 50px;
+    }
+    .entertainment-details .card-info{
+        margin-top: -50px;
+    }
 
     ////events
     .events .events-wrapper{
@@ -340,6 +506,9 @@
     .hero .hero-wrap{
         margin-top: 100px;
     }
+    .hero-play .hero-play-wrap{
+        margin-top: 90px;
+    }
    
     .hero-triangle{
         -webkit-clip-path: polygon(0 0, 100% 95%, 100% 100%, 0% 100%);
@@ -366,6 +535,84 @@
     //     padding: 0 15px;
     //     // height: 32px;
     // }
+    /////entertainment-details
+    .entertainment-details .entertainment-details-title{
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .entertainment-details .entertainment-details-subtitle{
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+    .entertainment-details .entertainment-details-descr p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .entertainment-details .header-descr-wrap{
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+    .entertainment-details .header-descr-wrap {
+        margin-top: 10px;
+    }
+    .entertainment-details .header-descr{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .entertainment-details .card-info-main{
+        flex-direction: column;
+    }
+    .entertainment-details .card-info-main {
+        margin-top: 15px;
+    }
+    .entertainment-details .card-info-main-img{
+        min-width: auto;
+        width: auto;
+        max-height: 300px;
+    }
+    .entertainment-details .card-info-close{
+        top: 35px;
+        right: 35px;
+    }
+    .entertainment-details .card-active{
+        height: 380px;
+    }
+    .entertainment-details .card-info-btn{
+        padding: 8px 14px;
+    }
+    .entertainment-details .card-info-btn span{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .entertainment-details .card-descr{
+        padding: 25px 20px;
+        height: auto;
+    }
+    .entertainment-details .card-descr{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .entertainment-details .entertainment-details-header{
+        margin-bottom: 30px;
+    }
+    .entertainment-details .card-info-footer{
+        flex-direction: column;
+    }
+    .entertainment-details .footer-description{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .button-balance{
+        width: 100%;
+        max-width: 375px;
+    }
+    .entertainment-details .cards-images{
+        display: none;
+    }
 
     //events 
     .events .wrapper{
@@ -473,6 +720,37 @@
     .hero .bg-video{
         top: calc(110 / 575 * 100vw);
     }
+
+    .hero-play .bg-banner{
+        background-image: url(../images/play-mobile-bg.png);
+        aspect-ratio: 377/521;
+        padding: calc(88 / 375 * 100vw) calc(20 / 375 * 100vw);
+    }
+    .hero-play .divider{
+        display: none;
+    }
+    .hero-play .content{
+        flex-direction: column;
+        
+    }
+    .hero-play .main-content{
+        max-width: 100%;
+        font-size: calc(24 / 375 * 100vw);
+        line-height: calc(32 / 375 * 100vw);
+        margin-right: 0px;
+    }
+    .hero-play .sub-content{
+        max-width: 100%;
+        font-size: calc(16 / 375 * 100vw);
+        line-height: calc(26 / 375 * 100vw);
+        margin-left: 0px;
+        margin-top: calc(10 /375 * 100vw);
+        span{
+            font-size: calc(16 / 375 * 100vw);
+            line-height: calc(26 / 375 * 100vw);
+            font-weight: 400;
+        }
+    }
     //entertainments
     .entertainments .header-wrap{
         padding: 0px 15px 0px 17px;
@@ -535,7 +813,16 @@
             }
         }
     }
-
+    ///entertainment-details
+    .entertainment-details{
+        padding-top: 50px;
+    }
+    .entertainment-details .container{
+        display: none;
+    }
+    .entertainment-details .container-mobile{
+        display: block;
+    }
 
     /////events
     .events .events-wrapper{

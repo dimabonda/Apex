@@ -9,6 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const logoSearchIcon = document.querySelector('.logo-container>img');
     const searchInputMobile = document.querySelector('.header-mobile .search-input');
     const worktimeDropList = document.querySelector('.header-worktime-drop');
+    const dropListItems = document.querySelectorAll(".menu-mobile_drop-list > li");
     
     
     //only with arrows
@@ -26,9 +27,17 @@ window.addEventListener("DOMContentLoaded", () => {
         closeSubLists(-1)
         hamburger.classList.toggle('hamburger_hidden');
         if (logoSearchIcon.src.split('/')[logoSearchIcon.src.split('/').length - 1] == 'search.svg'){
-            logoSearchIcon.src = './images/icons/close.svg';
+            if(window.location.href.includes("pages")) {
+                logoSearchIcon.src = './../../images/icons/close.svg' ;
+            } else {
+                logoSearchIcon.src = './images/icons/close.svg' ;
+            }
         } else {
-            logoSearchIcon.src = './images/icons/search.svg';
+            if(window.location.href.includes("pages")){
+                logoSearchIcon.src = './../../images/icons/search.svg';
+            } else {
+                logoSearchIcon.src = './images/icons/search.svg';
+            }
         }
 
         isFocus && window.setTimeout(() => {searchInputMobile.focus()},0)
@@ -63,7 +72,11 @@ window.addEventListener("DOMContentLoaded", () => {
     logoSearchIcon.addEventListener("click", () => {
         openMobileMenu(true)
     })
-
+    dropListItems.forEach(item => {
+        item.addEventListener("click", () => {
+            openMobileMenu()
+        })
+    })
     
     filteredTitles.forEach((item, index) => {
         item.addEventListener("click", (event) => {

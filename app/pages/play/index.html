@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../css/style.min.css">
     <link rel="stylesheet" href="../../fonts/Gotham/stylesheet.css">
     <link rel="stylesheet" href="../../fonts/HelveticaNeue/stylesheet.css">
+    <link rel="stylesheet" href="../../fonts/Criteria CF/stylesheet.css">
     <link rel="stylesheet" href="../../fonts/Inter/stylesheet.css">
     <title>Document</title>
 </head>
@@ -16,17 +17,10 @@
         <div class="header-wrap">
             <div class="header-top">
                 <div class="header-info">
-                    <div class="header-location">
+                    <div class="header-location location_btn">
                         <span>LOCATION: </span><span> MARLBOROUGH</span><img class="chevron" src="../../images/icons/chevron-down.svg" type="image">
-                        <ul class="drop-list">
-                            <li><a href="">Albany</a></li>
-                            <li><a href="">Marlborough</a></li>
-                            <li><a href="">Syracuse</a></li>
-                            <li><a href="">Virginia Beach</a></li>
-                        </ul>
                     </div>
                     <span class="header-delimiter">|</span>
-                    <div class="header-worktime">OPEN TODAY: 11am - 9pm</div>
                     <div class="header-worktime-drop">
                         HOURS<img class="chevron" src="../../images/icons/chevron-down.svg" type="image">
                         <div class="worktime-drop-list">
@@ -56,17 +50,17 @@
             <div class="header-bottom">
                 <ul class="menu">
                     <li class="menu-item">
-                        <a href="#">Play<img type="image" src="../../images/icons/chevron-down.svg" alt="hevron-down"></a>
+                        <a href="./">Play<img type="image" src="../../images/icons/chevron-down.svg" alt="hevron-down"></a>
                         <ul class="drop-list">
-                            <li><a href="#">Apex Kids</a></li>
-                            <li><a href="#">Arcade</a></li>
-                            <li><a href="#">Bowling</a></li>
-                            <li><a href="#">Bumper Cars</a></li>
-                            <li><a href="#">Go Kart Racing</a></li>
-                            <li><a href="#">Laser Tag</a></li>
-                            <li><a href="#">Mini Golf</a></li>
-                            <li><a href="#">Ropes Course</a></li>
-                            <li><a href="#">Sports Simulators</a></li>
+                            <li><a href="./#apex_kids">Apex Kids</a></li>
+                            <li><a href="./#arcade">Arcade</a></li>
+                            <li><a href="./#bowling">Bowling</a></li>
+                            <li><a href="./#bumper_cars">Bumper Cars</a></li>
+                            <li><a href="./#kart_racing">Go Kart Racing</a></li>
+                            <li><a href="./#laser_tag">Laser Tag</a></li>
+                            <li><a href="./#mini_golf">Mini Golf</a></li>
+                            <li><a href="./#ropes_course">Ropes Course</a></li>
+                            <li><a href="./#sports_simulators">Sports Simulators</a></li>
                         </ul>
                     </li>
                     <li class="menu-item">
@@ -87,14 +81,30 @@
                 <div class="booking">
                     <div class="booking-party booking-party_btn">
                         <a href="#">Book a party</a>
-                        <div class="wavy_line"><img src="../../images/wavy line/line_l.svg" alt="left"><img src="../../images/wavy line/line_c.svg" alt="center"><img src="../../images/wavy line/line-r.svg" alt="right"></div>
+                        <div class="wave-wrap">
+                            <img src="../../images/icons/wave.svg" alt="">
+                            <img src="../../images/icons/wave.svg" alt="">
+                            <img src="../../images/icons/wave.svg" alt="">
+                            <img src="../../images/icons/wave.svg" alt="">
+                        </div>
                     </div>
-                    <button class="button button-reservation">reservations<img src="../../images/icons/chevron-down.svg" alt=""></button>
+                    <div class="drop-wrap">
+                        <button class="button button-reservation btn-hover">reservations<img src="../../images/icons/chevron-down.svg" alt=""></button>
+                        <ul class="drop-list">
+                            <li><a href="#">Apex Kids</a></li>
+                            <li><a href="#">Arcade</a></li>
+                            <li><a href="#">Bowling</a></li>
+                            <li><a href="#">Go Kart Racing</a></li>
+                            <li><a href="#">Laser Tag</a></li>
+                            <li><a href="#">Mini Golf</a></li>
+                            <li><a href="#">Sports Simulators</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="logo">
                 <div class="logo-wrap">
-                    <a href="../../index.html">
+                    <a href="../../">
                         <img src="../../images/Logo-t.svg" alt="logo-top" class="logo-image-top">
                         <img src="../../images/Logo-b.svg" alt="logo-bottom" class="logo-image-bottom">
                     </a>
@@ -106,12 +116,11 @@
                 <div class="hamburger">
                     <img src="../../images/icons/hamburger_menu.svg" alt="menu">
                 </div>
-                <a class="logo-mobile" href="#">
+                <a class="logo-mobile" href="../../">
                     <img src="../../images/Logo-t.svg" alt="logo-top" class="logo-image-top">
                     <img src="../../images/Logo-b.svg" alt="logo-bottom" class="logo-image-bottom">
                 </a>
                 <img class="active" src="../../images/icons/search.svg" alt="search">
-                <img class="" src="../../images/icons/close.svg" alt="close">
             </div>
             <div class="search-mobile">
                 <div class="search">
@@ -120,7 +129,7 @@
                 </div>
                 <div class="divider"></div>
             </div>
-            <div class="location-wrap">
+            <div class="location-wrap location_btn">
                 <img src="../../images/icons/location.svg" alt="location">
                 <div class="location">Marlborough, MA</div>
             </div>
@@ -152,15 +161,15 @@
                         <a href="#">Play</a> <img src="../../images/icons/chevron-down.svg" alt="chevron">
                     </div>
                     <ul class="menu-mobile_drop-list">
-                        <li><a href="#apex_kids">Apex Kids</a></li>
-                        <li><a href="#arcade">Arcade</a></li>
-                        <li><a href="#bowling">Bowling</a></li>
-                        <li><a href="#bumper">Bumper Cars</a></li>
-                        <li><a href="#go">Go Kart Racing</a></li>
-                        <li><a href="#laser">Laser Tag</a></li>
-                        <li><a href="#mini_golf">Mini Golf</a></li>
-                        <li><a href="#ropes_course">Ropes Course</a></li>
-                        <li><a href="#sports">Sports Simulators</a></li>
+                        <li><a href="./#apex_kids">Apex Kids</a></li>
+                        <li><a href="./#arcade">Arcade</a></li>
+                        <li><a href="./#bowling">Bowling</a></li>
+                        <li><a href="./#bumper_cars">Bumper Cars</a></li>
+                        <li><a href="./#kart_racing">Go Kart Racing</a></li>
+                        <li><a href="./#laser_tag">Laser Tag</a></li>
+                        <li><a href="./#mini_golf">Mini Golf</a></li>
+                        <li><a href="./#ropes_course">Ropes Course</a></li>
+                        <li><a href="./#sports_simulators">Sports Simulators</a></li>
                     </ul>
                 </li>
                 <li class="menu-mobile-item">
@@ -223,6 +232,7 @@
                     <div class="book-modal_location">Marlborough</div>
                     <h3 class="book-modal_title">Book a Party</h3>
                 </div>
+                <img class="close-modal" src="../../images/icons/close-black.svg" alt="close">
                 <form action="" class="book-modal_form">
                     <input class="first-name" type="text" placeholder="First name">
                     <input class="last-name" type="text" placeholder="Last Name">
@@ -236,33 +246,1008 @@
                     <button class="submit">Submit</button>
                 </form>
             </div>
-            <img class="close-modal" src="../../images/icons/close-black.svg" alt="close">
+
+            <div class="location-modal">
+                <div class="location-modal-header">
+                    <div class="logo-wrapper">
+                        <div class="logo-front"><img src="../../images/icons/location-icon.svg" alt="front-logo"></div>
+                        <div class="back-logo"></div>
+                    </div>
+                    <svg class="close-modal" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28 16L16 28M16 16L28 28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="location-modal-title">Let us point you in the right direction.</h3>
+                <div class="location-modal-subtitle">FIND YOUR APEX</div>
+                <ul class="location-list">
+                    <li class="location-item">
+                        <label for="marlborough">
+                            <span class="place">Marlborough, MA</span>
+                            <span class="address">21 Apex Drive<strong>(508) 251-8666</strong></span>
+                            <input type="radio" id="marlborough"> 
+                        </label>
+                    </li>
+                    <li class="location-item checked">
+                        <label for="albany">
+                            <span class="place">Albany, NY</span>
+                            <span class="address">1 Crossgates Mall Rd<strong>(518) 426-8666</strong></span>
+                            <input type="radio" id="albany">
+                        </label>
+                    </li>
+                    <li class="location-item">
+                        <label for="syracuse">
+                            <span class="place">Syracuse, NY</span>
+                            <span class="address">9583 Destiny USA Dr<strong>(315) 515-8666</strong></span>
+                            <input type="radio" id="syracuse">
+                        </label>
+                    </li>
+                    <li class="location-item">
+                        <label for="virginia">
+                            <span class="place">Virginia Beach, VA</span>
+                            <span class="address">4621 Columbus St<strong>(757) 678-8666</strong></span>
+                            <input type="radio" id="virginia">
+                        </label>
+                    </li>
+                </ul>
+                <button class="location-btn btn-hover">Continue</button>
+            </div>
         </div>
     </div>
-    <section class="play-banner">
-        <div class="content">
-            <div class="main-content">Get into <span>100,000</span> square feet of jaw-dropping amazingness.</div>
-            <div class="sub-content">Everything you want. And a few things you couldn't expect.<span>All fun. No kidding.</span></div>
+    <section class="hero-play">
+        <div class="hero-play-wrap">
+            <div class="bg-banner">
+                <div class="content">
+                    <div class="main-content">Get into <span>nearly two football fields</span> of jaw-dropping amazingness.</div>
+                    <div class="divider"></div>
+                    <div class="sub-content">Everything you want. And a few things you couldn't expect.<span>All fun. No kidding.</span></div>
+                </div>
+            </div>
+            <div class="bg-video">
+                <video width="100%" loop muted autoplay>
+                    <source src="https://www.apexentertainment.com/marlborough/wp-content/themes/apex/assets/video/play-compressed.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
-        <div class="home-banner-triangle"></div>
+        <div class="hero-triangle"></div>
     </section>
+
     <section class="entertainment-details">
         <div class="container">
             <div class="entertainment-details-header">
                 <h3 class="entertainment-details-title">What do we have for you?</h3>
-                <div>
+                <div class="entertainment-details-descr">
                    <div class="entertainment-details-subtitle">Fun. Games. Food. More than a few surprises.</div>
                     <p>Full tilt and fine tuned for fun. Here's what we've packed into nearly two football fields at Apex:</p> 
+                </div>
+                <a href="#" class="button button-restrictions btn-hover">See pricing & restrictions</a>
+            </div>
+            <div class="entertainment-details-cards">
+                <a href="./#apex_kids" id="card-apex_kids" class="card">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Apex-kids.jpg" alt="Apex-kids">
+                        <div class="card-info-btn">
+                            <span>Apex Kids</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+                <a href="./#arcade" id="card-arcade" class="card">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Arcade.jpg" alt="Arcade">
+                        <div class="card-info-btn">
+                            <span>Arcade</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+                <a href="./#bowling" id="card-bowling" class="card">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Bowling.jpg" alt="Bowling">
+                        <div class="card-info-btn">
+                            <span>Bowling</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+                <a href="./#bumper_cars" id="card-bumper_cars" class="card">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Bumper-cars.jpg" alt="Bumper-cars">
+                        <div class="card-info-btn">
+                            <span>Bumper Cars</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+                <a href="./#kart_racing" id="card-kart_racing" class="card">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Go-kart-racing.jpg" alt="Go-kart-racing">
+                        <div class="card-info-btn">
+                            <span>Go Kart Racing</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+                <a href="./#laser_tag" id="card-laser_tag" class="card">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Go-kart-racing.jpg" alt="Go-kart-racing">
+                        <div class="card-info-btn">
+                            <span>Laser Tag</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+                <a href="./#mini_golf" id="card-mini_golf" class="card">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Mini-golf.jpg" alt="Mini-golf">
+                        <div class="card-info-btn">
+                            <span>Mini Golf</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+                <a href="./#ropes_course" id="card-ropes_course" class="card">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Ropes-course.jpg" alt="Ropes-course">
+                        <div class="card-info-btn">
+                            <span>Ropes Course</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+                <a href="./#sports_simulators" id="card-sports_simulators" class="card">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Sports-simulators.jpg" alt="Sports-simulators">
+                        <div class="card-info-btn">
+                            <span>Sports Simulators</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+
+
+                <div id="info-apex_kids" class="card-info">
+                    <img src="../../images/icons/close-details.svg" alt="close" class="card-info-close">
+                    <div class="card-info-header">
+                        <h3 class="header-title">Apex Kids</h3>
+                        <div class="header-descr-wrap">
+                            <div class="header-descr">From updated classics to the newest in gaming innovation, your winnings will take you straight to our upscale prize redemption counter. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies! Come to Apex and sign up for our X Card for special VIP pricing in the arcade.</div>
+                            <a class="button btn-hover button-card-info-book booking-party_btn" href="#">Book a party</a>
+                        </div>
+                    </div>
+                    <div class="card-info-main">
+                        <div class="card-info-main-container">
+                            <h4 class="main-title">Featuring 70+ Games</h4>
+                            <div class="main-description">
+                                <div class="main-description-top">Apex Entertainment has a world-class redemption arcade featuring 70+ games including the most popular games in the industry:</div>
+                                <ul class="main-description-list">
+                                    <li>Rabbids Invasion VR</li>
+                                    <li>Connect4 Hoops</li>
+                                    <li>Teenage Mutant Ninja Turtles</li>
+                                    <li>Tomb Raider</li>
+                                    <li>The Walking Dead</li>
+                                    <li>Willy Wonka</li>
+                                    <li>Jurassic Park</li>
+                                    <li>Cruis 'n Blast</li>
+                                    <li>Mario Kart</li>
+                                </ul>
+                                <div class="main-description-bottom">There are prizes galore to redeem including electronics, games, novelty items, stuffed animals and much more. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies!</div>
+                                <i>Pricing is subject to change based on school vacation and holidays.</i>
+                            </div>
+                        </div>
+                        <div class="card-info-main-img">
+                            <img src="../../images/entertainment-details/Apex-kids.jpg" alt="Arcade">
+                        </div>
+                    </div>
+                    <div class="card-info-footer">
+                        <div class="cards-images">
+                            <div class="main-card">
+                                <img class="main-card-x" src="../../images/gift-card/Group 2145.svg" alt="b-logo">
+                                <div class="main-card-text">CARD</div>
+                                <img class="main-card-logo" src="../../images/gift-card/apex-inter.svg" alt="gift-card-logo">
+                            </div>
+                            <div class="sub-card">
+                                <img src="../../images/entertainment-details/sub-card.svg" alt="card" class="sub-card-img">
+                            </div>
+                        </div>
+                        <div class="footer-description">
+                            <div class="footer-description-title">Apex Entertainment Reloadable X-Card</div>
+                            <p>All of your winnings are saved electronically on your Apex Entertainment Fun Card, so no matter how you spend your points or when your card will always reflect a real-time balance. You can even save up your points and keep your game card filled, so with each visit to Apex Entertainment, you walk in ahead. If this isn't enough motivation to bring your A-game to Apex Entertainment Center, we don't know what is!</p>
+                            <i>Please note: Redemption prizes are not to be re-sold by the winner under any circumstance.</i>
+                            <a href="#" class="button button-balance btn-hover">Check Your Balance</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="info-arcade" class="card-info">
+                    <img src="../../images/icons/close-details.svg" alt="close" class="card-info-close">
+                    <div class="card-info-header">
+                        <h3 class="header-title">The Arcade</h3>
+                        <div class="header-descr-wrap">
+                            <div class="header-descr">From updated classics to the newest in gaming innovation, your winnings will take you straight to our upscale prize redemption counter. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies! Come to Apex and sign up for our X Card for special VIP pricing in the arcade.</div>
+                            <a class="button btn-hover button-card-info-book booking-party_btn" href="#">Book a party</a>
+                        </div>
+                    </div>
+                    <div class="card-info-main">
+                        <div class="card-info-main-container">
+                            <h4 class="main-title">Featuring 70+ Games</h4>
+                            <div class="main-description">
+                                <div class="main-description-top">Apex Entertainment has a world-class redemption arcade featuring 70+ games including the most popular games in the industry:</div>
+                                <ul class="main-description-list">
+                                    <li>Rabbids Invasion VR</li>
+                                    <li>Connect4 Hoops</li>
+                                    <li>Teenage Mutant Ninja Turtles</li>
+                                    <li>Tomb Raider</li>
+                                    <li>The Walking Dead</li>
+                                    <li>Willy Wonka</li>
+                                    <li>Jurassic Park</li>
+                                    <li>Cruis 'n Blast</li>
+                                    <li>Mario Kart</li>
+                                </ul>
+                                <div class="main-description-bottom">There are prizes galore to redeem including electronics, games, novelty items, stuffed animals and much more. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies!</div>
+                                <i>Pricing is subject to change based on school vacation and holidays.</i>
+                            </div>
+                        </div>
+                        <div class="card-info-main-img">
+                            <img src="../../images/entertainment-details/Arcade.jpg" alt="Arcade">
+                        </div>
+                    </div>
+                    <div class="card-info-footer">
+                        <div class="cards-images">
+                            <div class="main-card">
+                                <img class="main-card-x" src="../../images/gift-card/Group 2145.svg" alt="b-logo">
+                                <div class="main-card-text">CARD</div>
+                                <img class="main-card-logo" src="../../images/gift-card/apex-inter.svg" alt="gift-card-logo">
+                            </div>
+                            <div class="sub-card">
+                                <img src="../../images/entertainment-details/sub-card.svg" alt="card" class="sub-card-img">
+                            </div>
+                        </div>
+                        <div class="footer-description">
+                            <div class="footer-description-title">Apex Entertainment Reloadable X-Card</div>
+                            <p>All of your winnings are saved electronically on your Apex Entertainment Fun Card, so no matter how you spend your points or when your card will always reflect a real-time balance. You can even save up your points and keep your game card filled, so with each visit to Apex Entertainment, you walk in ahead. If this isn't enough motivation to bring your A-game to Apex Entertainment Center, we don't know what is!</p>
+                            <i>Please note: Redemption prizes are not to be re-sold by the winner under any circumstance.</i>
+                            <a href="#" class="button button-balance btn-hover">Check Your Balance</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="info-bowling" class="card-info">
+                    <img src="../../images/icons/close-details.svg" alt="close" class="card-info-close">
+                    <div class="card-info-header">
+                        <h3 class="header-title">Bowling</h3>
+                        <div class="header-descr-wrap">
+                            <div class="header-descr">From updated classics to the newest in gaming innovation, your winnings will take you straight to our upscale prize redemption counter. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies! Come to Apex and sign up for our X Card for special VIP pricing in the arcade.</div>
+                            <a class="button btn-hover button-card-info-book booking-party_btn" href="#">Book a party</a>
+                        </div>
+                    </div>
+                    <div class="card-info-main">
+                        <div class="card-info-main-container">
+                            <h4 class="main-title">Featuring 70+ Games</h4>
+                            <div class="main-description">
+                                <div class="main-description-top">Apex Entertainment has a world-class redemption arcade featuring 70+ games including the most popular games in the industry:</div>
+                                <ul class="main-description-list">
+                                    <li>Rabbids Invasion VR</li>
+                                    <li>Connect4 Hoops</li>
+                                    <li>Teenage Mutant Ninja Turtles</li>
+                                    <li>Tomb Raider</li>
+                                    <li>The Walking Dead</li>
+                                    <li>Willy Wonka</li>
+                                    <li>Jurassic Park</li>
+                                    <li>Cruis 'n Blast</li>
+                                    <li>Mario Kart</li>
+                                </ul>
+                                <div class="main-description-bottom">There are prizes galore to redeem including electronics, games, novelty items, stuffed animals and much more. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies!</div>
+                                <i>Pricing is subject to change based on school vacation and holidays.</i>
+                            </div>
+                        </div>
+                        <div class="card-info-main-img">
+                            <img src="../../images/entertainment-details/Bowling.jpg" alt="Arcade">
+                        </div>
+                    </div>
+                    <div class="card-info-footer">
+                        <div class="cards-images">
+                            <div class="main-card">
+                                <img class="main-card-x" src="../../images/gift-card/Group 2145.svg" alt="b-logo">
+                                <div class="main-card-text">CARD</div>
+                                <img class="main-card-logo" src="../../images/gift-card/apex-inter.svg" alt="gift-card-logo">
+                            </div>
+                            <div class="sub-card">
+                                <img src="../../images/entertainment-details/sub-card.svg" alt="card" class="sub-card-img">
+                            </div>
+                        </div>
+                        <div class="footer-description">
+                            <div class="footer-description-title">Apex Entertainment Reloadable X-Card</div>
+                            <p>All of your winnings are saved electronically on your Apex Entertainment Fun Card, so no matter how you spend your points or when your card will always reflect a real-time balance. You can even save up your points and keep your game card filled, so with each visit to Apex Entertainment, you walk in ahead. If this isn't enough motivation to bring your A-game to Apex Entertainment Center, we don't know what is!</p>
+                            <i>Please note: Redemption prizes are not to be re-sold by the winner under any circumstance.</i>
+                            <a href="#" class="button button-balance btn-hover">Check Your Balance</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="info-bumper_cars" class="card-info">
+                    <img src="../../images/icons/close-details.svg" alt="close" class="card-info-close">
+                    <div class="card-info-header">
+                        <h3 class="header-title">Bumper Cars</h3>
+                        <div class="header-descr-wrap">
+                            <div class="header-descr">From updated classics to the newest in gaming innovation, your winnings will take you straight to our upscale prize redemption counter. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies! Come to Apex and sign up for our X Card for special VIP pricing in the arcade.</div>
+                            <a class="button btn-hover button-card-info-book booking-party_btn" href="#">Book a party</a>
+                        </div>
+                    </div>
+                    <div class="card-info-main">
+                        <div class="card-info-main-container">
+                            <h4 class="main-title">Featuring 70+ Games</h4>
+                            <div class="main-description">
+                                <div class="main-description-top">Apex Entertainment has a world-class redemption arcade featuring 70+ games including the most popular games in the industry:</div>
+                                <ul class="main-description-list">
+                                    <li>Rabbids Invasion VR</li>
+                                    <li>Connect4 Hoops</li>
+                                    <li>Teenage Mutant Ninja Turtles</li>
+                                    <li>Tomb Raider</li>
+                                    <li>The Walking Dead</li>
+                                    <li>Willy Wonka</li>
+                                    <li>Jurassic Park</li>
+                                    <li>Cruis 'n Blast</li>
+                                    <li>Mario Kart</li>
+                                </ul>
+                                <div class="main-description-bottom">There are prizes galore to redeem including electronics, games, novelty items, stuffed animals and much more. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies!</div>
+                                <i>Pricing is subject to change based on school vacation and holidays.</i>
+                            </div>
+                        </div>
+                        <div class="card-info-main-img">
+                            <img src="../../images/entertainment-details/Bumper-cars.jpg" alt="Arcade">
+                        </div>
+                    </div>
+                    <div class="card-info-footer">
+                        <div class="cards-images">
+                            <div class="main-card">
+                                <img class="main-card-x" src="../../images/gift-card/Group 2145.svg" alt="b-logo">
+                                <div class="main-card-text">CARD</div>
+                                <img class="main-card-logo" src="../../images/gift-card/apex-inter.svg" alt="gift-card-logo">
+                            </div>
+                            <div class="sub-card">
+                                <img src="../../images/entertainment-details/sub-card.svg" alt="card" class="sub-card-img">
+                            </div>
+                        </div>
+                        <div class="footer-description">
+                            <div class="footer-description-title">Apex Entertainment Reloadable X-Card</div>
+                            <p>All of your winnings are saved electronically on your Apex Entertainment Fun Card, so no matter how you spend your points or when your card will always reflect a real-time balance. You can even save up your points and keep your game card filled, so with each visit to Apex Entertainment, you walk in ahead. If this isn't enough motivation to bring your A-game to Apex Entertainment Center, we don't know what is!</p>
+                            <i>Please note: Redemption prizes are not to be re-sold by the winner under any circumstance.</i>
+                            <a href="#" class="button button-balance btn-hover">Check Your Balance</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="info-kart_racing" class="card-info">
+                    <img src="../../images/icons/close-details.svg" alt="close" class="card-info-close">
+                    <div class="card-info-header">
+                        <h3 class="header-title">Go Kart Racing</h3>
+                        <div class="header-descr-wrap">
+                            <div class="header-descr">From updated classics to the newest in gaming innovation, your winnings will take you straight to our upscale prize redemption counter. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies! Come to Apex and sign up for our X Card for special VIP pricing in the arcade.</div>
+                            <a class="button btn-hover button-card-info-book booking-party_btn" href="#">Book a party</a>
+                        </div>
+                    </div>
+                    <div class="card-info-main">
+                        <div class="card-info-main-container">
+                            <h4 class="main-title">Featuring 70+ Games</h4>
+                            <div class="main-description">
+                                <div class="main-description-top">Apex Entertainment has a world-class redemption arcade featuring 70+ games including the most popular games in the industry:</div>
+                                <ul class="main-description-list">
+                                    <li>Rabbids Invasion VR</li>
+                                    <li>Connect4 Hoops</li>
+                                    <li>Teenage Mutant Ninja Turtles</li>
+                                    <li>Tomb Raider</li>
+                                    <li>The Walking Dead</li>
+                                    <li>Willy Wonka</li>
+                                    <li>Jurassic Park</li>
+                                    <li>Cruis 'n Blast</li>
+                                    <li>Mario Kart</li>
+                                </ul>
+                                <div class="main-description-bottom">There are prizes galore to redeem including electronics, games, novelty items, stuffed animals and much more. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies!</div>
+                                <i>Pricing is subject to change based on school vacation and holidays.</i>
+                            </div>
+                        </div>
+                        <div class="card-info-main-img">
+                            <img src="../../images/entertainment-details/Go-kart-racing.jpg" alt="racing">
+                        </div>
+                    </div>
+                    <div class="card-info-footer">
+                        <div class="cards-images">
+                            <div class="main-card">
+                                <img class="main-card-x" src="../../images/gift-card/Group 2145.svg" alt="b-logo">
+                                <div class="main-card-text">CARD</div>
+                                <img class="main-card-logo" src="../../images/gift-card/apex-inter.svg" alt="gift-card-logo">
+                            </div>
+                            <div class="sub-card">
+                                <img src="../../images/entertainment-details/sub-card.svg" alt="card" class="sub-card-img">
+                            </div>
+                        </div>
+                        <div class="footer-description">
+                            <div class="footer-description-title">Apex Entertainment Reloadable X-Card</div>
+                            <p>All of your winnings are saved electronically on your Apex Entertainment Fun Card, so no matter how you spend your points or when your card will always reflect a real-time balance. You can even save up your points and keep your game card filled, so with each visit to Apex Entertainment, you walk in ahead. If this isn't enough motivation to bring your A-game to Apex Entertainment Center, we don't know what is!</p>
+                            <i>Please note: Redemption prizes are not to be re-sold by the winner under any circumstance.</i>
+                            <a href="#" class="button button-balance btn-hover">Check Your Balance</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="info-laser_tag" class="card-info">
+                    <img src="../../images/icons/close-details.svg" alt="close" class="card-info-close">
+                    <div class="card-info-header">
+                        <h3 class="header-title">Laser Tag</h3>
+                        <div class="header-descr-wrap">
+                            <div class="header-descr">From updated classics to the newest in gaming innovation, your winnings will take you straight to our upscale prize redemption counter. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies! Come to Apex and sign up for our X Card for special VIP pricing in the arcade.</div>
+                            <a class="button btn-hover button-card-info-book booking-party_btn" href="#">Book a party</a>
+                        </div>
+                    </div>
+                    <div class="card-info-main">
+                        <div class="card-info-main-container">
+                            <h4 class="main-title">Featuring 70+ Games</h4>
+                            <div class="main-description">
+                                <div class="main-description-top">Apex Entertainment has a world-class redemption arcade featuring 70+ games including the most popular games in the industry:</div>
+                                <ul class="main-description-list">
+                                    <li>Rabbids Invasion VR</li>
+                                    <li>Connect4 Hoops</li>
+                                    <li>Teenage Mutant Ninja Turtles</li>
+                                    <li>Tomb Raider</li>
+                                    <li>The Walking Dead</li>
+                                    <li>Willy Wonka</li>
+                                    <li>Jurassic Park</li>
+                                    <li>Cruis 'n Blast</li>
+                                    <li>Mario Kart</li>
+                                </ul>
+                                <div class="main-description-bottom">There are prizes galore to redeem including electronics, games, novelty items, stuffed animals and much more. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies!</div>
+                                <i>Pricing is subject to change based on school vacation and holidays.</i>
+                            </div>
+                        </div>
+                        <div class="card-info-main-img">
+                            <img src="../../images/entertainment-details/Go-kart-racing.jpg" alt="racing">
+                        </div>
+                    </div>
+                    <div class="card-info-footer">
+                        <div class="cards-images">
+                            <div class="main-card">
+                                <img class="main-card-x" src="../../images/gift-card/Group 2145.svg" alt="b-logo">
+                                <div class="main-card-text">CARD</div>
+                                <img class="main-card-logo" src="../../images/gift-card/apex-inter.svg" alt="gift-card-logo">
+                            </div>
+                            <div class="sub-card">
+                                <img src="../../images/entertainment-details/sub-card.svg" alt="card" class="sub-card-img">
+                            </div>
+                        </div>
+                        <div class="footer-description">
+                            <div class="footer-description-title">Apex Entertainment Reloadable X-Card</div>
+                            <p>All of your winnings are saved electronically on your Apex Entertainment Fun Card, so no matter how you spend your points or when your card will always reflect a real-time balance. You can even save up your points and keep your game card filled, so with each visit to Apex Entertainment, you walk in ahead. If this isn't enough motivation to bring your A-game to Apex Entertainment Center, we don't know what is!</p>
+                            <i>Please note: Redemption prizes are not to be re-sold by the winner under any circumstance.</i>
+                            <a href="#" class="button button-balance btn-hover">Check Your Balance</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="info-mini_golf" class="card-info">
+                    <img src="../../images/icons/close-details.svg" alt="close" class="card-info-close">
+                    <div class="card-info-header">
+                        <h3 class="header-title">Mini Golf</h3>
+                        <div class="header-descr-wrap">
+                            <div class="header-descr">From updated classics to the newest in gaming innovation, your winnings will take you straight to our upscale prize redemption counter. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies! Come to Apex and sign up for our X Card for special VIP pricing in the arcade.</div>
+                            <a class="button btn-hover button-card-info-book booking-party_btn" href="#">Book a party</a>
+                        </div>
+                    </div>
+                    <div class="card-info-main">
+                        <div class="card-info-main-container">
+                            <h4 class="main-title">Featuring 70+ Games</h4>
+                            <div class="main-description">
+                                <div class="main-description-top">Apex Entertainment has a world-class redemption arcade featuring 70+ games including the most popular games in the industry:</div>
+                                <ul class="main-description-list">
+                                    <li>Rabbids Invasion VR</li>
+                                    <li>Connect4 Hoops</li>
+                                    <li>Teenage Mutant Ninja Turtles</li>
+                                    <li>Tomb Raider</li>
+                                    <li>The Walking Dead</li>
+                                    <li>Willy Wonka</li>
+                                    <li>Jurassic Park</li>
+                                    <li>Cruis 'n Blast</li>
+                                    <li>Mario Kart</li>
+                                </ul>
+                                <div class="main-description-bottom">There are prizes galore to redeem including electronics, games, novelty items, stuffed animals and much more. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies!</div>
+                                <i>Pricing is subject to change based on school vacation and holidays.</i>
+                            </div>
+                        </div>
+                        <div class="card-info-main-img">
+                            <img src="../../images/entertainment-details/Mini-golf.jpg" alt="golf">
+                        </div>
+                    </div>
+                    <div class="card-info-footer">
+                        <div class="cards-images">
+                            <div class="main-card">
+                                <img class="main-card-x" src="../../images/gift-card/Group 2145.svg" alt="b-logo">
+                                <div class="main-card-text">CARD</div>
+                                <img class="main-card-logo" src="../../images/gift-card/apex-inter.svg" alt="gift-card-logo">
+                            </div>
+                            <div class="sub-card">
+                                <img src="../../images/entertainment-details/sub-card.svg" alt="card" class="sub-card-img">
+                            </div>
+                        </div>
+                        <div class="footer-description">
+                            <div class="footer-description-title">Apex Entertainment Reloadable X-Card</div>
+                            <p>All of your winnings are saved electronically on your Apex Entertainment Fun Card, so no matter how you spend your points or when your card will always reflect a real-time balance. You can even save up your points and keep your game card filled, so with each visit to Apex Entertainment, you walk in ahead. If this isn't enough motivation to bring your A-game to Apex Entertainment Center, we don't know what is!</p>
+                            <i>Please note: Redemption prizes are not to be re-sold by the winner under any circumstance.</i>
+                            <a href="#" class="button button-balance btn-hover">Check Your Balance</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="info-ropes_course" class="card-info">
+                    <img src="../../images/icons/close-details.svg" alt="close" class="card-info-close">
+                    <div class="card-info-header">
+                        <h3 class="header-title">Ropes Course</h3>
+                        <div class="header-descr-wrap">
+                            <div class="header-descr">From updated classics to the newest in gaming innovation, your winnings will take you straight to our upscale prize redemption counter. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies! Come to Apex and sign up for our X Card for special VIP pricing in the arcade.</div>
+                            <a class="button btn-hover button-card-info-book booking-party_btn" href="#">Book a party</a>
+                        </div>
+                    </div>
+                    <div class="card-info-main">
+                        <div class="card-info-main-container">
+                            <h4 class="main-title">Featuring 70+ Games</h4>
+                            <div class="main-description">
+                                <div class="main-description-top">Apex Entertainment has a world-class redemption arcade featuring 70+ games including the most popular games in the industry:</div>
+                                <ul class="main-description-list">
+                                    <li>Rabbids Invasion VR</li>
+                                    <li>Connect4 Hoops</li>
+                                    <li>Teenage Mutant Ninja Turtles</li>
+                                    <li>Tomb Raider</li>
+                                    <li>The Walking Dead</li>
+                                    <li>Willy Wonka</li>
+                                    <li>Jurassic Park</li>
+                                    <li>Cruis 'n Blast</li>
+                                    <li>Mario Kart</li>
+                                </ul>
+                                <div class="main-description-bottom">There are prizes galore to redeem including electronics, games, novelty items, stuffed animals and much more. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies!</div>
+                                <i>Pricing is subject to change based on school vacation and holidays.</i>
+                            </div>
+                        </div>
+                        <div class="card-info-main-img">
+                            <img src="../../images/entertainment-details/Ropes-course.jpg" alt="Ropes-course">
+                        </div>
+                    </div>
+                    <div class="card-info-footer">
+                        <div class="cards-images">
+                            <div class="main-card">
+                                <img class="main-card-x" src="../../images/gift-card/Group 2145.svg" alt="b-logo">
+                                <div class="main-card-text">CARD</div>
+                                <img class="main-card-logo" src="../../images/gift-card/apex-inter.svg" alt="gift-card-logo">
+                            </div>
+                            <div class="sub-card">
+                                <img src="../../images/entertainment-details/sub-card.svg" alt="card" class="sub-card-img">
+                            </div>
+                        </div>
+                        <div class="footer-description">
+                            <div class="footer-description-title">Apex Entertainment Reloadable X-Card</div>
+                            <p>All of your winnings are saved electronically on your Apex Entertainment Fun Card, so no matter how you spend your points or when your card will always reflect a real-time balance. You can even save up your points and keep your game card filled, so with each visit to Apex Entertainment, you walk in ahead. If this isn't enough motivation to bring your A-game to Apex Entertainment Center, we don't know what is!</p>
+                            <i>Please note: Redemption prizes are not to be re-sold by the winner under any circumstance.</i>
+                            <a href="#" class="button button-balance btn-hover">Check Your Balance</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="info-sports_simulators" class="card-info">
+                    <img src="../../images/icons/close-details.svg" alt="close" class="card-info-close">
+                    <div class="card-info-header">
+                        <h3 class="header-title">Sports Simulators</h3>
+                        <div class="header-descr-wrap">
+                            <div class="header-descr">From updated classics to the newest in gaming innovation, your winnings will take you straight to our upscale prize redemption counter. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies! Come to Apex and sign up for our X Card for special VIP pricing in the arcade.</div>
+                            <a class="button btn-hover button-card-info-book booking-party_btn" href="#">Book a party</a>
+                        </div>
+                    </div>
+                    <div class="card-info-main">
+                        <div class="card-info-main-container">
+                            <h4 class="main-title">Featuring 70+ Games</h4>
+                            <div class="main-description">
+                                <div class="main-description-top">Apex Entertainment has a world-class redemption arcade featuring 70+ games including the most popular games in the industry:</div>
+                                <ul class="main-description-list">
+                                    <li>Rabbids Invasion VR</li>
+                                    <li>Connect4 Hoops</li>
+                                    <li>Teenage Mutant Ninja Turtles</li>
+                                    <li>Tomb Raider</li>
+                                    <li>The Walking Dead</li>
+                                    <li>Willy Wonka</li>
+                                    <li>Jurassic Park</li>
+                                    <li>Cruis 'n Blast</li>
+                                    <li>Mario Kart</li>
+                                </ul>
+                                <div class="main-description-bottom">There are prizes galore to redeem including electronics, games, novelty items, stuffed animals and much more. Accumulate and save your points over time for a big-ticket prize, or reward yourself immediately with a variety of goodies!</div>
+                                <i>Pricing is subject to change based on school vacation and holidays.</i>
+                            </div>
+                        </div>
+                        <div class="card-info-main-img">
+                            <img src="../../images/entertainment-details/Sports-simulators.jpg" alt="simulators">
+                        </div>
+                    </div>
+                    <div class="card-info-footer">
+                        <div class="cards-images">
+                            <div class="main-card">
+                                <img class="main-card-x" src="../../images/gift-card/Group 2145.svg" alt="b-logo">
+                                <div class="main-card-text">CARD</div>
+                                <img class="main-card-logo" src="../../images/gift-card/apex-inter.svg" alt="gift-card-logo">
+                            </div>
+                            <div class="sub-card">
+                                <img src="../../images/entertainment-details/sub-card.svg" alt="card" class="sub-card-img">
+                            </div>
+                        </div>
+                        <div class="footer-description">
+                            <div class="footer-description-title">Apex Entertainment Reloadable X-Card</div>
+                            <p>All of your winnings are saved electronically on your Apex Entertainment Fun Card, so no matter how you spend your points or when your card will always reflect a real-time balance. You can even save up your points and keep your game card filled, so with each visit to Apex Entertainment, you walk in ahead. If this isn't enough motivation to bring your A-game to Apex Entertainment Center, we don't know what is!</p>
+                            <i>Please note: Redemption prizes are not to be re-sold by the winner under any circumstance.</i>
+                            <a href="#" class="button button-balance btn-hover">Check Your Balance</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container-mobile">
+            <div class="entertainment-details-header-mobile">
+                <h3 class="title">What do we have for you?</h3>
+                <p><span>Fun. Games. Food. </span>More than a few surprises.Full tilt and fine tuned for fun. Here's what we've packed into nearly two football fields at Apex:</p> 
+            </div>
+            <div class="entertainment-details-cards-mobile">
+                <a href="./#apex_kids" id="card_mobile-apex_kids" class="card-mobile">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Apex-kids.jpg" alt="Apex-kids">
+                        <div class="card-info-btn">
+                            <span>Apex Kids</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+                </a>
+                <a href="./#arcade" id="card_mobile-arcade" class="card-mobile">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Arcade.jpg" alt="Arcade">
+                        <div class="card-info-btn">
+                            <span>Arcade</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+                </a>
+                <a href="./#bowling" id="card_mobile-bowling" class="card-mobile">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Bowling.jpg" alt="Bowling">
+                        <div class="card-info-btn">
+                            <span>Bowling</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+                </a>
+                <a href="./#bumper_cars" id="card_mobile-bumper_cars" class="card-mobile">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Bumper-cars.jpg" alt="Bumper-cars">
+                        <div class="card-info-btn">
+                            <span>Bumper Cars</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+                <a href="./#kart_racing" id="card_mobile-kart_racing" class="card-mobile">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Go-kart-racing.jpg" alt="Go-kart-racing">
+                        <div class="card-info-btn">
+                            <span>Go Kart Racing</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+                <a href="./#laser_tag" id="card_mobile-laser_tag" class="card-mobile">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Go-kart-racing.jpg" alt="Go-kart-racing">
+                        <div class="card-info-btn">
+                            <span>Laser Tag</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+                <a href="./#mini_golf" id="card_mobile-mini_golf" class="card-mobile">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Mini-golf.jpg" alt="Mini-golf">
+                        <div class="card-info-btn">
+                            <span>Mini Golf</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+                <a href="./#ropes_course" id="card_mobile-ropes_course" class="card-mobile">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Ropes-course.jpg" alt="Ropes-course">
+                        <div class="card-info-btn">
+                            <span>Ropes Course</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+                <a href="./#sports_simulators" id="card_mobile-sports_simulators" class="card-mobile">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="../../images/entertainment-details/Sports-simulators.jpg" alt="Sports-simulators">
+                        <div class="card-info-btn">
+                            <span>Sports Simulators</span><img src="../../images/icons/arrow-down-details.svg" alt="chevron-down">
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    <section class="booking-event">
+        <div class="container">
+            <div class="plan">
+                <h3 class="plan-title">Plan and book your event</h3>
+                <a href="#" class="button button-booking btn-hover">book today</a>
+            </div>
+            <div class="delimiter">
+                <div class="delimiter-line"></div>
+                <div class="delimiter-text">OR</div>
+                <div class="delimiter-line"></div>
+            </div>
+            <div class="help">
+                <h3 class="help-title">Get help from our planners</h3>
+                <div class="help-description">Call our booking team at <span>(508) 251-8666</span> or email us:</div>
+                <a href="#" class="button button-help_email btn-hover">EMAIL INQUIRY</a>
+            </div>
+        </div>
+    </section>
+    <section class="gift-card">
+        <div class="container">
+            <div class="gift-card_padding"></div>
+            <div class="content-wrap">
+                <div class="content">
+                    <div class="gift-card-title">Give the gift of</div>
+                    <div class="gift-card-lable"></div>
+                    <div class="gift-card-description">Spread the love, gifting your buddies an Apex <br/>Fun Pass.</div>
+                    <div class="gift-card-buttons_group">
+                        <a href="#" class="button button-gift button-gift-card btn-hover">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.917 13.0002L12.3813 8.00016M7.61937 8.00016L2.08369 13.0002M1.66699 3.8335L8.47109 8.59636C9.02207 8.98205 9.29756 9.17489 9.59721 9.24959C9.8619 9.31557 10.1387 9.31557 10.4034 9.24959C10.7031 9.17489 10.9786 8.98205 11.5296 8.59637L18.3337 3.8335M5.66699 14.6668H14.3337C15.7338 14.6668 16.4339 14.6668 16.9686 14.3943C17.439 14.1547 17.8215 13.7722 18.0612 13.3018C18.3337 12.767 18.3337 12.067 18.3337 10.6668V5.3335C18.3337 3.93336 18.3337 3.2333 18.0612 2.69852C17.8215 2.22811 17.439 1.84566 16.9686 1.60598C16.4339 1.3335 15.7338 1.3335 14.3337 1.3335H5.66699C4.26686 1.3335 3.5668 1.3335 3.03202 1.60598C2.56161 1.84566 2.17916 2.22811 1.93948 2.69852C1.66699 3.2333 1.66699 3.93336 1.66699 5.3335V10.6668C1.66699 12.067 1.66699 12.767 1.93948 13.3018C2.17916 13.7722 2.56161 14.1547 3.03202 14.3943C3.5668 14.6668 4.26686 14.6668 5.66699 14.6668Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>Order gift card<input type="image" src="../../images/icons/chevron-down.svg" alt="hevron-down"></a>
+                        <a href="#" class="button button-gift button-check-balance btn-hover"><img src="../../images/icons/Postal_envelope_white.svg" alt="Postal_envelope_white">CHECK BALANCE<input type="image" src="../../images/icons/chevron-down.svg" alt="hevron-down"></a>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card card-main">
+                        <img class="card-image" src="../../images/gift-card/Group 2145.svg" alt="top-gift">
+                        <div class="card-title">FUN PASS</div>
+                        <img class="card-main-logo" src="../../images/gift-card/apex-inter.svg" alt="gift-card-logo">
+                    </div>
+                    <div class="card card-sub_card">
+                        <img class="card-image" src="../../images/gift-card/Group 2148.svg" alt="top-gift">
+                    </div>
+                </div>
+                <div class="gift-card-grad"></div>
+                <div class="gift-card-grad"></div>
+            </div>
+            <div class="content-wrap-mobile">
+                <div class="cards">
+                    <div class="card card-main">
+                        <img class="card-image" src="../../images/gift-card/Group 2145.svg" alt="top-gift">
+                        <div class="card-title">FUN PASS</div>
+                        <img class="card-main-logo" src="../../images/gift-card/gift-card-logo.svg" alt="gift-card-logo">
+                    </div>
+                    <div class="card card-sub_card">
+                        <img class="card-image" src="../../images/gift-card/Group 2148.svg" alt="top-gift">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="gift-card-title">Give the gift of <div class="gift-card-lable"></div></div>
+                    
+                    <div class="gift-card-description">Spread the love, gifting your buddies an Apex Fun Pass.</div>
+                    <div class="gift-card-buttons_group">
+                        <button class="button button-gift button-gift-card"><img src="../../images/icons/Postal_envelope_black.svg" alt="Postal_envelope_black">sOrder gift card<input type="image" src="../../images/icons/chevron-down.svg" alt="hevron-down"></button>
+                        <button class="button button-gift button-check-balance"><img src="../../images/icons/Postal_envelope_white.svg" alt="Postal_envelope_white">CHECK BALANCE<input type="image" src="../../images/icons/chevron-down.svg" alt="hevron-down"></button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <footer class="footer">
+        <div class="container">
+            <div class="registration">
+                <div class="registration-content">
+                    <div class="registration-title">Rewards. Discounts. Surprises. Sign up:</div>
+                    <div class="registration-descr">Be the first to know about exclusive rewards, special discounts, and more!</div>
+                </div>
+                <form class="registration-form">
+                        <input type="text" class="registration-input" placeholder="Email address">
+                        <button class="button registration-button btn-hover">subscirbe</button>
+                </form>
+            </div>
+            <div class="divider"></div>
+            <div class="footer-main">
+                <div class="footer-main-item play">
+                    <h5 class="footer-main-header">PLAY</h5>
+                    <ul class="play-list">
+                        <li class="list-item">Reservations</li>
+                        <li class="list-item">Apex Kids</li>
+                        <li class="list-item">Arcade</li>
+                        <li class="list-item">Bowling</li>
+                        <li class="list-item">Bumper Cars</li>
+                        <li class="list-item">Go Kart Racing</li>
+                        <li class="list-item">Laser Tag</li>
+                        <li class="list-item">Mini Golf</li>
+                        <li class="list-item">Ropes Course</li>
+                        <li class="list-item">Sports Simulators</li>
+                    </ul>
+                </div>
+                <div class="footer-main-item party">
+                    <h5 class="footer-main-header">PARTY</h5>
+                    <ul class="party-list">
+                        <li class="list-item">Host an Event</li>
+                        <li class="list-item">Kids Birthday Parties</li>
+                        <li class="list-item">Group Events</li>
+                        <li class="list-item">Field Trips</li>
+                        <li class="list-item">Corporate Events</li>
+                        <li class="list-item">Meetings</li>
+                        <li class="list-item">Package Options</li>
+                    </ul>
+                </div>
+                <div class="footer-main-item company">
+                    <h5 class="footer-main-header">Company</h5>
+                    <ul class="company-list">
+                        <li class="list-item">Careers</li>
+                        <li class="list-item">About</li>
+                        <li class="list-item">Contact</li>
+                    </ul>
+                </div>
+                <div class="footer-main-item help">
+                    <h5 class="footer-main-header">HELP</h5>
+                    <ul class="help-list">
+                        <li class="list-item">FAQs</li>
+                        <li class="list-item">The X-Card</li>
+                        <li class="list-item">Gift Cards</li>
+                    </ul>
+                </div>
+                <div class="footer-main-item legal">
+                    <h5 class="footer-main-header">Legal</h5>
+                    <ul class="legal-list">
+                        <li class="list-item">Terms & Conditions</li>
+                        <li class="list-item">Privacy Policy</li>
+                        <li class="list-item">Cookies</li>
+                        <li class="list-item">Waiver</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-main-mobile">
+                <div class="footer-main-mobile-item">BOOK an event</div>
+                <div class="footer-main-mobile-item">ABOUT</div>
+                <div class="footer-main-mobile-item">PLAY</div>
+                <div class="footer-main-mobile-item">FAQs</div>
+                <div class="footer-main-mobile-item">Parties & Events</div>
+                <div class="footer-main-mobile-item">TERMS & COnditions</div>
+                <div class="footer-main-mobile-item">RESERVATIONS</div>
+                <div class="footer-main-mobile-item">CONTACT</div>
+            </div>
+            <div class="divider"></div>
+            <div class="footer-bottom">
+                <div class="logo-wrapper">
+                    <img class="footer-logo" src="../../images/footer-logo.svg" alt="footer-logo">
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="../../images/icons/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img src="../../images/icons/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="../../images/icons/instagram.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-year">© 2023 Apex Entertainment. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay">
+        <div class="content">
+            <div class="overlay-line"></div>
+            <div class="cards-info-mobile">
+                <div id="info-mobile-apex_kids" class="card-info-mobile">
+                    <h4 class="card-info-mobile-title">Apex Kids</h4>
+                    <div class="card-info-mobile-descr">
+                        From a sprawling <span>jungle gym</span> to <span>obstacle courses</span>, we take kids' imaginations and bring them to life in a special area built just for them. <span>Giant inflatables</span>. 3000 square feet of play space perfect for rounds and rounds of hide and go seek.
+                        We can plan parties for you and have bundles available for the whole building. Apex Kids is open Tuesday - Friday (12pm - 6pm) and Saturday & Sunday (11am - 6pm)
+                        <span>$11 per hour of play</span>
+                        From a sprawling <span>jungle gym</span> to <span>obstacle courses</span>, we take kids' imaginations and bring them to life in a special area built just for them. <span>Giant inflatables</span>. 3000 square feet of play space perfect for rounds and rounds of hide and go seek.
+                        We can plan parties for you and have bundles available for the whole building. Apex Kids is open Tuesday - Friday (12pm - 6pm) and Saturday & Sunday (11am - 6pm)
+                        <span>$11 per hour of play</span>
+                    </div>
+                </div>
+                <div id="info-mobile-arcade" class="card-info-mobile">
+                    <h4 class="card-info-mobile-title">Arcade</h4>
+                    <div class="card-info-mobile-descr">
+                        From a sprawling <span>jungle gym</span> to <span>obstacle courses</span>, we take kids' imaginations and bring them to life in a special area built just for them. <span>Giant inflatables</span>. 3000 square feet of play space perfect for rounds and rounds of hide and go seek.
+                        We can plan parties for you and have bundles available for the whole building. Apex Kids is open Tuesday - Friday (12pm - 6pm) and Saturday & Sunday (11am - 6pm)
+                        <span>$11 per hour of play</span>
+                    </div>
+                </div>
+                <div id="info-mobile-bowling" class="card-info-mobile">
+                    <h4 class="card-info-mobile-title">Bowling</h4>
+                    <div class="card-info-mobile-descr">
+                        From a sprawling <span>jungle gym</span> to <span>obstacle courses</span>, we take kids' imaginations and bring them to life in a special area built just for them. <span>Giant inflatables</span>. 3000 square feet of play space perfect for rounds and rounds of hide and go seek.
+                        We can plan parties for you and have bundles available for the whole building. Apex Kids is open Tuesday - Friday (12pm - 6pm) and Saturday & Sunday (11am - 6pm)
+                        <span>$11 per hour of play</span>
+                    </div>
+                </div>
+                <div id="info-mobile-bumper_cars" class="card-info-mobile">
+                    <h4 class="card-info-mobile-title">Bumper Cars</h4>
+                    <div class="card-info-mobile-descr">
+                        From a sprawling <span>jungle gym</span> to <span>obstacle courses</span>, we take kids' imaginations and bring them to life in a special area built just for them. <span>Giant inflatables</span>. 3000 square feet of play space perfect for rounds and rounds of hide and go seek.
+                        We can plan parties for you and have bundles available for the whole building. Apex Kids is open Tuesday - Friday (12pm - 6pm) and Saturday & Sunday (11am - 6pm)
+                        <span>$11 per hour of play</span>
+                    </div>
+                </div>
+                <div id="info-mobile-kart_racing" class="card-info-mobile">
+                    <h4 class="card-info-mobile-title">Go Kart Racing</h4>
+                    <div class="card-info-mobile-descr">
+                        From a sprawling <span>jungle gym</span> to <span>obstacle courses</span>, we take kids' imaginations and bring them to life in a special area built just for them. <span>Giant inflatables</span>. 3000 square feet of play space perfect for rounds and rounds of hide and go seek.
+                        We can plan parties for you and have bundles available for the whole building. Apex Kids is open Tuesday - Friday (12pm - 6pm) and Saturday & Sunday (11am - 6pm)
+                        <span>$11 per hour of play</span>
+                    </div>
+                </div>
+                <div id="info-mobile-laser_tag" class="card-info-mobile">
+                    <h4 class="card-info-mobile-title">Laser Tag</h4>
+                    <div class="card-info-mobile-descr">
+                        From a sprawling <span>jungle gym</span> to <span>obstacle courses</span>, we take kids' imaginations and bring them to life in a special area built just for them. <span>Giant inflatables</span>. 3000 square feet of play space perfect for rounds and rounds of hide and go seek.
+                        We can plan parties for you and have bundles available for the whole building. Apex Kids is open Tuesday - Friday (12pm - 6pm) and Saturday & Sunday (11am - 6pm)
+                        <span>$11 per hour of play</span>
+                    </div>
+                </div>
+                <div id="info-mobile-mini_golf" class="card-info-mobile">
+                    <h4 class="card-info-mobile-title">Mini Golf</h4>
+                    <div class="card-info-mobile-descr">
+                        From a sprawling <span>jungle gym</span> to <span>obstacle courses</span>, we take kids' imaginations and bring them to life in a special area built just for them. <span>Giant inflatables</span>. 3000 square feet of play space perfect for rounds and rounds of hide and go seek.
+                        We can plan parties for you and have bundles available for the whole building. Apex Kids is open Tuesday - Friday (12pm - 6pm) and Saturday & Sunday (11am - 6pm)
+                        <span>$11 per hour of play</span>
+                    </div>
+                </div>
+                <div id="info-mobile-ropes_course" class="card-info-mobile">
+                    <h4 class="card-info-mobile-title">Ropes Course</h4>
+                    <div class="card-info-mobile-descr">
+                        From a sprawling <span>jungle gym</span> to <span>obstacle courses</span>, we take kids' imaginations and bring them to life in a special area built just for them. <span>Giant inflatables</span>. 3000 square feet of play space perfect for rounds and rounds of hide and go seek.
+                        We can plan parties for you and have bundles available for the whole building. Apex Kids is open Tuesday - Friday (12pm - 6pm) and Saturday & Sunday (11am - 6pm)
+                        <span>$11 per hour of play</span>
+                    </div>
+                </div>
+                <div id="info-mobile-sports_simulators" class="card-info-mobile">
+                    <h4 class="card-info-mobile-title">Sports Simulators</h4>
+                    <div class="card-info-mobile-descr">
+                        From a sprawling <span>jungle gym</span> to <span>obstacle courses</span>, we take kids' imaginations and bring them to life in a special area built just for them. <span>Giant inflatables</span>. 3000 square feet of play space perfect for rounds and rounds of hide and go seek.
+                        We can plan parties for you and have bundles available for the whole building. Apex Kids is open Tuesday - Friday (12pm - 6pm) and Saturday & Sunday (11am - 6pm)
+                        <span>$11 per hour of play</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../../js/slick.min.js"></script>
     <script src="../../js/index.js"></script>
+    <script src="../../js/details.js"></script>
     <script src="../../js/header.js"></script>
-    <script src="../../js/special-events_slider.js"></script>
     <script src="../../js/modal.js"></script>
 </body>
 
