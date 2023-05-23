@@ -1,0 +1,611 @@
+.events-info{
+    width: 100%;
+    color: #FFFFFF;
+    margin-top: 76px;
+    .container{
+        max-width: 1263px;
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+    .events-info-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-events-info{
+        max-width: 628px;
+    }
+    .header-title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -0.02em;
+        margin-bottom: 36px;
+        padding: 0px 4.5px;
+    }
+    .header-descr{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 36px;
+        span:nth-child(1){
+            font-weight: 700;
+        }
+    }
+    .header-event-spaces-link{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        a{
+            text-decoration-line: underline;
+            color: #6095FF;
+        }
+    }
+    .header-contact{
+        max-width: 519px;
+        padding: 32px 74.5px;
+        background: linear-gradient(180deg, #528BFF 6.85%, rgba(82, 139, 255, 0) 100%);
+        border-radius: 20px;
+    }
+    .header-contact-title{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        margin-bottom: 36px;
+        span{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .tel-link{
+        display: block;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 24px;
+    }
+   
+    .header-contact-divider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.014em;
+        color: #FC6F2E;
+        margin-bottom: 24px;
+    }
+    .header-contact-divider::before{
+        content: '';
+        width: 164px;
+        height: 1px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+        background-color: #528BFF;
+        display: block;
+        margin-right: 6px;
+    }
+    .header-contact-divider::after{
+        content: '';
+        width: 164px;
+        height: 1px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%);
+        background-color: #528BFF;
+        display: block;
+        margin-left: 6px;
+    }
+    .contact-buttons-group{
+        display: flex;
+        justify-content: center;
+        grid-gap: 16px;
+    }
+
+    .events-info-content{
+        padding: 96px 0px 109px 0px;
+    }
+    .events-info-list{
+        width: 100%;
+    }
+    .events-info-item{
+        width: 100%;
+    }
+    .main-content-item{
+        position: relative;
+        height: 350px;
+        display: flex;
+    }
+    .events-info-item + .events-info-item{
+        margin-top: 96px;
+    }
+    .events-info-item:nth-child(odd){
+        .main-content-item{
+            justify-content: flex-start;
+        }
+        .item-info{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-color: #FFFFFF;
+            border-radius: 0px 0px 20px 0px;
+            width: 570px;
+            height: 100%;
+            -webkit-clip-path: polygon(21% 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(21% 0, 100% 0, 100% 100%, 0% 100%);
+            padding: 0px 48px 0px 123px;
+        }
+    }
+    .events-info-item:nth-child(even){
+
+        .main-content-item{
+            justify-content: flex-end;
+        }
+        .item-info{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: #FFFFFF;
+            border-radius: 20px 0px 0px 0px;
+            width: 570px;
+            height: 100%;
+            -webkit-clip-path: polygon(0 0, 100% 0, 79% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 79% 100%, 0% 100%);
+            padding: 0px 123px 0px 48px;
+        }
+
+    }
+
+    .events-info-item:nth-child(odd).events-info-item_active{
+        .item-info{
+            border-radius: 0px;
+        }
+        
+    }
+    .events-info-item_active{
+        .details-container{
+            display: block;
+        }
+        .item-info-link img{
+            transform: rotate(180deg);
+        }
+    }
+    
+    .item-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .item-info-title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -0.02em;
+        color: #120550;
+        margin-bottom: 24px;
+    }
+    .item-info-descr{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: #120550;
+        margin-bottom: 18px;
+    }
+    .item-info-link{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        
+        text-transform: uppercase;
+        color: #FC6F2E;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        img{
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+            margin-bottom: 3px;
+        }
+    }
+    .item-info-link:hover{
+        color: #120550;
+        img{
+            content: url('../images/events-page/chevron-down-navy.svg');
+            // transform: rotate(180deg);
+        }
+    }
+    .details-container{
+        display: none;
+        padding: 30px 48px 56px;
+        background: linear-gradient(180deg, #528BFF 0%, rgba(82, 139, 255, 0) 100%);
+        border-radius: 0px 0px 30px 0px;
+    }
+    .details-container-close{
+        display: flex;
+        justify-content: end;
+        cursor: pointer;
+    } 
+    .details-wrap{
+        margin-top: 32px;
+        grid-gap: 30px;
+        display: flex;
+        justify-content: space-between;
+    }   
+    .details-descr{
+        max-width: 769px;
+        h6{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 32px;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+            margin-bottom: 24px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        span{
+            line-height: 26px;
+            font-weight: 700;
+        }
+        p + p{
+            margin-top: 40px;
+        }
+    }
+    .details-contact{
+        max-width: 335px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .header-contact-divider{
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+        .header-contact-divider::before, .header-contact-divider::after{
+            width: 148px;
+        }
+    }
+    .title-online{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+    .contact-title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+    .contact-phone{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+        text-align: center;
+        a{
+            font-weight: 700;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+
+    .events-info-content-mobile{
+        display: none;
+        position: relative;
+        margin-bottom: 120px;
+        .slick-track{
+            display: flex;
+            align-items: end;
+        }
+        .slick-list{
+            overflow: hidden;
+        }
+        
+        .slick-arrow{
+            position: absolute;
+            bottom: -57px;
+            transform: translateX(-50%);
+            font-size: 0;
+            border: none;
+            outline: none;
+            width: 40px;
+            height: 40px;
+            padding: 0px;
+            cursor: pointer;
+        }
+        .slick-next{
+            background: url(../images/icons/arrow-right.png) center/cover no-repeat;
+            left: calc(50% + 34px);
+        } 
+        .slick-prev{
+            background: url(../images/icons/arrow-left.png) center/cover no-repeat;
+            left: calc(50% - 34px);
+        }
+        .slick-current {
+            .card-descr{
+                box-shadow: 0px 20px 24px -4px rgba(16,24,40,.08), 0px 8px 8px -4px rgba(16,24,40,.03);
+            }
+            .transparent-box{
+                height: 30px;
+                width: 100%;
+            }
+        }
+        
+        .slick-current+.slick-slide {
+            opacity: 1 !important;
+            // bottom: -30px !important;
+            top: auto !important;
+            width: calc(308 / 375 * 100vw) !important;
+            height: 100%;
+            margin: 0 auto;
+        }
+        
+    }
+    
+    .card-mobile{
+        text-decoration: none;
+    }
+
+    .card-descr{
+        background: #FFFFFF;
+        border-radius: 0px 0px 16px 16px;
+        padding: 32px 24px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2E2B26;
+    }
+    .card-img-wrap{
+        border-radius: 16px 16px 0px 0px;  
+        width: 100%;
+        aspect-ratio: 343/280;
+        overflow: hidden;
+        position: relative;
+    }
+    .card-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card-info-btn{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 64px;
+        width: 100%;
+        padding: 16px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+        span{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+            z-index: 1;
+        }
+        img{
+            z-index: 1;
+        }
+    }
+    .filter{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(12px);
+        
+    }
+}
+
+.rooms-carousel-wrapper{
+    position: relative;
+    border-radius: 30px 0px 20px 20px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    .slick-list{
+        overflow: hidden;
+    }
+    .slick-track{
+        display: flex;
+    }
+    .slider-controls{
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #2A4B8E;
+        background: rgba(18, 5, 80, 0.6);
+    }
+    .slick-arrow{
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 73px;
+        cursor: pointer;
+        &:hover{
+            background: rgba(252, 111, 46, 0.8);
+        }
+    }
+    
+    .slide-dots{
+        width: calc(100% - 146px);
+        overflow-x: scroll;
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+    }
+    .slide-dots::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .slick-dots{
+        .slick-list{
+            overflow: hidden;
+            width: 100%;
+
+        }
+        .slick-track{
+            // display: flex;
+            height: 100px;
+        }
+        position: relative;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        height: 100%;
+        width: fit-content;
+        display: flex;
+        button{
+            outline: none;
+            cursor: pointer;
+            border: none;
+            font-size: 0px;
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+        }
+        li.slick-active button{
+            background: linear-gradient(0.92deg, #6930DB 0.83%, rgba(25, 67, 175, 0.1) 98.95%);
+            border-top: 5px solid #FC6F2E;
+        }
+        li{
+            position: relative;
+            height: 100%;
+            // width: 244px;
+            &::before{
+                position: absolute;
+                content: '';
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                // width: 90%;
+                width: 100%;
+
+                top: 50%;
+                left: 50%;
+                text-align: center;
+                transform: translate(-50%, -50%);
+
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            &:nth-child(1)::before{
+                content: 'Talladega  Ballroom1';
+            }
+            &:nth-child(2)::before{
+                content: 'Upstairs Pit Stop Tavern2';
+            }
+            &:nth-child(3)::before{
+                content: 'VIP Bowling Room3';
+            }
+            &:nth-child(4)::before{
+                content: 'Sports Simulator Room4';
+            }
+            &:nth-child(5)::before{
+                content: 'Tennis Room5';
+            }
+            &:nth-child(6)::before{
+                content: 'Talladega  Ballroom6';
+            }
+            &:nth-child(7)::before{
+                content: 'Upstairs Pit Stop Tavern7';
+            }
+            &:nth-child(8)::before{
+                content: 'VIP Bowling Room8';
+            }
+            &:nth-child(9)::before{
+                content: 'Sports Simulator Room9';
+            }
+            &:nth-child(10)::before{
+                content: 'Tennis Room10';
+            }
+        }
+    }
+}
+.rooms-carousel-item{
+    width: 100%;
+    aspect-ratio: 1240/800;
+    padding: 171px 409px 100px 101px;
+    color: #FFFFFF;
+    background-size: cover;
+    background-position: center;
+    
+}
+.rooms-carousel-subtitle{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    margin-bottom: 68px;
+}
+.rooms-carousel-title{
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 84px;
+    letter-spacing: -0.04em;
+    text-shadow: 0px 12px 16px rgba(16, 24, 40, 0.08), 0px 4px 6px rgba(16, 24, 40, 0.03);
+    margin-bottom: 33px;
+    max-width: 612px;
+}
+.rooms-carousel-descr{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 38px;
+}
+.rooms-carousel-more_details{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    img{
+        margin-left: 12px;
+    }
+}
+.rooms-carousel-item .rooms-carousel-more_details{
+    color: #FFFFFF;
+}
+
+.tavern-img{
+    background: linear-gradient(82.89deg, rgba(0, 0, 0, 0.6) 27.9%, rgba(0, 0, 0, 0) 70.66%), url('../images/events-page/rooms/Tavern.png') center / cover no-repeat;
+}
+.room-img{
+    background: linear-gradient(82.89deg, rgba(0, 0, 0, 0.6) 27.9%, rgba(0, 0, 0, 0) 70.66%), url('../images/events-page/rooms/Room.png') center / cover no-repeat;
+}
+.vip-bowling-img{
+    background: linear-gradient(82.89deg, rgba(0, 0, 0, 0.6) 27.9%, rgba(0, 0, 0, 0) 70.66%), url('../images/events-page/rooms/bowling.jpg') center / cover no-repeat;
+}
+.sports-simulator-room-img{
+    background: linear-gradient(82.89deg, rgba(0, 0, 0, 0.6) 27.9%, rgba(0, 0, 0, 0) 70.66%), url('../images/events-page/rooms/SportsSimulatorRoom.jpg') center / cover no-repeat;
+}
+.tennis-img{
+    background: linear-gradient(82.89deg, rgba(0, 0, 0, 0.6) 27.9%, rgba(0, 0, 0, 0) 70.66%), url('../images/events-page/rooms/tennis.jpg') center / cover no-repeat;
+}

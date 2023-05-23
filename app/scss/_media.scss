@@ -187,6 +187,37 @@
     .events .events-wrapper .events-item:nth-child(2) .card {
         margin-top: 285px;
     }
+
+    .events-info .events-info-item:nth-child(even) .item-info{
+        width: 400px;
+        padding: 0px 90px 0px 30px;
+    }
+    .events-info .events-info-item:nth-child(odd) .item-info{
+        width: 400px;
+        padding: 0px 30px 0px 90px;
+    }
+    .events-info .item-info-title{
+        font-size: 27px;
+    }
+
+    .events-info .main-content-item > img{
+        object-fit: cover;
+        width: 73%;
+    }
+    ////////////
+    .rooms-carousel-item{
+        padding: 0px 409px 100px 73px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .rooms-carousel-title{
+        font-size: 74px;
+        line-height: 74px;
+    }
+    .rooms-carousel-subtitle{
+        margin-bottom: 50px;
+    }
 //////
     .reviews .card{
         width: 760px;
@@ -283,6 +314,11 @@
     .hero-play .hero-play-wrap{
         margin-top: 60px;
     }
+
+    .hero-event .hero-event-bg{
+        margin-top: 60px;
+    }
+    
     ///entertainments 
     
     .entertainments .header-wrap{
@@ -482,6 +518,78 @@
         grid-area: 2/1/5/2;
     }
 
+    ////events-info
+    .events-info .events-info-item+.events-info-item {
+        margin-top: 70px;
+    }
+    .events-info .events-info-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .events-info .header-events-info{
+        max-width: 100%;
+    }
+    
+    .events-info .header-title{
+        text-align: center;
+        br{
+            display: none;
+        }
+    }
+    .events-info .header-descr{
+        text-align: center;
+    }
+    .events-info .header-event-spaces-link{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .events-info .header-contact{
+        max-width: 100%;
+    }
+    .events-info .events-info-item .main-content-item .item-info{
+        width: 340px;
+    }
+
+    .events-info .main-content-item{
+        height: 300px;
+    }
+    
+    .events-info .item-info-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+    .events-info .item-info-descr{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .events-info .item-info-link{
+        font-size: 16px;
+    }
+
+    .events-info .details-container{
+        padding: 30px 30px 56px;
+    }
+    .events-info .details-contact{
+        max-width: 260px;
+    }
+    .events-info .details-contact .header-contact-divider::before, .events-info .details-contact .header-contact-divider::after{
+        width: 120px;
+    }
+    ///////room carousel
+    .rooms-carousel-item{
+        padding: 50px 300px 120px 50px;
+    }
+    .rooms-carousel-subtitle {
+        margin-bottom: 30px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .rooms-carousel-title {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
     ///special-events
     .special-events .special-events-wrap{
         display: none;
@@ -516,7 +624,13 @@
         // -webkit-clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
         // clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
     }   
-    
+    .hero-event .hero-triangle{
+        height: calc( 40 / 1666 * 100vw);
+    }
+
+    .hero-event .hero-event-bg {
+        margin-top: 90px;
+    }
 
     //entertainments
     .entertainments .entertainments-header{
@@ -622,6 +736,71 @@
     .special-events-mobile-wrap .card-wrap{
         padding: 51px 30px 60px 30px;
         height: auto;
+    }
+///////////events-info
+    .events-info .events-info-item+.events-info-item {
+        margin-top: 50px;
+    }
+    .events-info .main-content-item{
+        height: 220px;
+    }
+    .events-info .events-info-item .main-content-item .item-info{
+        width: 300px;
+    }
+    .events-info .events-info-item:nth-child(odd) .item-info{
+        padding: 0px 20px 0px 70px;
+    }
+    .events-info .events-info-item:nth-child(even) .item-info{
+        padding: 0px 70px 0px 20px;
+    }
+    .events-info .item-info-title {
+        font-size: 20px;
+        margin-bottom: 6px;
+        line-height: 24px;
+    }
+    .events-info .item-info-descr {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    .events-info .item-info-link {
+        font-size: 14px;
+    }
+    .events-info .details-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .events-info .details-contact{
+        max-width: 100%;
+    }
+    .events-info .details-contact .header-contact-divider::before, .events-info .details-contact .header-contact-divider::after{
+        width: 190px;
+    }
+    /// rooms-carousel
+    .rooms-carousel-wrapper .slick-arrow{
+        width: 50px;
+    }
+    .rooms-carousel-wrapper .slide-dots{
+        width: calc(100% - 100px);
+    }
+    .rooms-carousel-item{
+        padding: 50px 150px 120px 50px;
+    }
+    .rooms-carousel-subtitle{
+        font-size: 24px;
+    }
+    .rooms-carousel-title{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .rooms-carousel-descr{
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+    .rooms-carousel-more_details{
+        font-size: 18px;
+        line-height: 22px;
     }
 
     ///reviews
@@ -751,6 +930,17 @@
             font-weight: 400;
         }
     }
+
+    .hero-event .hero-event-bg{
+        background-image: url('../images/events-page/bg-mobile.png');
+        aspect-ratio: 375/289;
+        padding: calc(80 / 375 * 100vw) 0px 0px calc(26 / 375 * 100vw);
+    }
+    .hero-event .hero-event-location{
+        font-size: calc(9 / 375 * 100vw);
+        line-height: calc(12 / 375 * 100vw);
+        color: #FFFFFF;
+    }
     //entertainments
     .entertainments .header-wrap{
         padding: 0px 15px 0px 17px;
@@ -850,6 +1040,56 @@
         text-align: center;
         margin: 0 auto;
     }
+    /// events-info section
+    .events-info{
+        margin-top: 34px;
+    }
+    .events-info .header-title{
+        text-align: left;
+        padding: 0px;
+        br{
+            display: block;
+        }
+    }
+    .events-info .header-descr{
+        text-align: left;
+        span:nth-child(1){
+            font-weight: 400;
+        }
+        span:nth-child(2){
+            font-weight: 700;
+        }
+    }
+    .events-info .header-event-spaces-link{
+        display: none;
+    }
+    .events-info .header-contact{
+        padding: 32px;
+        min-height: 431px;
+    }
+    .events-info .header-contact-title{
+        margin-bottom: 16px;
+    }
+    .events-info .contact-buttons-group{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .events-info .events-info-content{
+        display: none;
+    }
+    .events-info .events-info-content-mobile{
+        display: block;
+    }
+    .events-info .container{
+        padding: 0px 16px;
+    }
+
+    ////rooms-carousel
+    .rooms-carousel-wrapper{
+        display: none;
+    }
+    /// special-events
 
     .special-events{
         padding-top: 0px;

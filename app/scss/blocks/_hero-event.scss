@@ -1,0 +1,18 @@
+.hero-event{
+    position: relative;
+    width: 100%;
+    .hero-event-bg{
+        width: 100%;
+        background-image: url(../images/bg/events-page-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        aspect-ratio: 1440/550;
+        padding: calc(230 / 1440 * 100vw) 0px 0px calc(100 / 1440 * 100vw);
+    }
+    .hero-event-location{
+        font-weight: 500;
+        font-size: calc(14 / 1440 * 100vw);
+        line-height: calc(20 / 1440 * 100vw);
+        color: rgba(255, 255, 255, 0.5);
+    }
+}

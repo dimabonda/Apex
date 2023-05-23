@@ -345,28 +345,10 @@
             position: relative;
             .slick-track{
                 display: flex;
-                // position: relative;
                 align-items: end;
             }
             .slick-list{
                 overflow: hidden;
-                height: 464px;
-            }
-            .slick-current + .slick-slide{
-                width: calc(308 / 375 * 100vw) !important;
-                transition: opacity 0.5s ease;
-                opacity: 1 !important;
-                margin: 0 auto;
-                top: auto !important;
-                bottom: -24px !important;
-                // margin-bottom: -24px;
-                .card-descr{
-                    font-size: 10px;
-                }
-            }
-            .slick-current{
-                height: 100%;
-                box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
             }
             .slick-arrow{
                 position: absolute;
@@ -388,14 +370,30 @@
                 background: url('../images/icons/arrow-right.png') center/cover no-repeat;
                 left: calc(50% + 34px);
             }
+            .slick-current{
+                .card-descr{
+                    box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+                }
+                .transparent-box{
+                    height: 30px;
+                    width: 100%;
+                }
+            }
+            .slick-current + .slick-slide{
+                width: calc(308 / 375 * 100vw) !important;
+                height: 100%;
+                opacity: 1 !important;
+                margin: 0 auto;
+                top: auto !important;
+              
+            }
+            
+            
+            
         }
         .card-mobile{
             text-decoration: none;
-        //     // height: 440px;
-        //     // position: absolute;
-
-        //     // z-index: 2;
-        //     // box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+       
         }
 
         .card-mobile-active{
@@ -411,13 +409,17 @@
             }
         }
         .card-img-wrap{
-            height: 280px;
+            border-radius: 16px 16px 0px 0px;  
+            width: 100%;
+            aspect-ratio: 343/280;
+            overflow: hidden;
+            position: relative;
         }
         .card-img{
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 20px 20px 0px 0px;
+            border-radius: 16px 16px 0px 0px;
         }
         .card-descr{
             padding: 32px 24px;
@@ -427,88 +429,8 @@
             border-radius: 0px 0px 20px 20px;
         }
     }
-    
+}
 
-}
-.overlay{
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    z-index: 1002;
-    // background-color: rgba(0, 0, 0, );
-    animation-duration: 0.5s;
-    animation-name: overlay;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    .content{
-        width: 100%;
-        height: 80%;
-        background-color: #FFFFFF;
-        position: absolute;
-        bottom: -85%;
-        transition: all 0.5s ease;
-        border-radius: 16px 16px 0px 0px;
-        padding: 60px 24px 40px 9px;
-
-    }
-    .overlay-line{
-        background: #FFFFFF;
-        border-radius: 3px;
-        width: 75px;
-        height: 7.5px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: -19.5px;
-    }
-    .cards-info-mobile{
-        height: 100%;
-        overflow: auto;
-    }
-    .card-info-mobile{
-        
-        display: none;
-    }
-    .card-info-mobile_active{
-        display: block;
-    }
-    .card-info-mobile-title{
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 40px;
-        letter-spacing: -0.03em;
-        color: #120550;
-        margin-bottom: 27.5px;
-    }
-    .card-info-mobile-descr{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        color: #120550;
-        span{
-            font-weight: 700;
-        }
-    }
-}
-@keyframes showOverlay {
-    0%{
-        background-color: rgba(0, 0, 0, 0);
-    }
-    100%{
-        background-color: rgba(0, 0, 0, .5);
-    }
-}
-@keyframes hideOverlay {
-    0%{
-        background-color: rgba(0, 0, 0, .5);
-    }
-    100%{
-        background-color: rgba(0, 0, 0, 0);
-    }
-}
 
 
 

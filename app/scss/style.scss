@@ -52,6 +52,10 @@ body{
         background: rgba(255, 255, 255, 0.1);
         border: 1px solid #FFFFFF;
         backdrop-filter: blur(8px);
+        &_navy{
+            border: 1px solid rgba(18, 5, 80, 1);
+            color: rgba(18, 5, 80, 1);
+        }
     }
     &-gift{
         display: flex;
@@ -180,13 +184,16 @@ a.button-restrictions{
 @import 'blocks/header'; 
 @import 'blocks/hero';
 @import 'blocks/hero-play';
+@import 'blocks/hero-event';
 @import 'blocks/entertainments';
 @import 'blocks/entertainment-details';
 @import 'blocks/events';
+@import 'blocks/events-info';
 @import 'blocks/special-events';
 @import 'blocks/reviews';
 @import 'blocks/booking-event';
 @import 'blocks/gift-card';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/overlay';
 @import 'media';
