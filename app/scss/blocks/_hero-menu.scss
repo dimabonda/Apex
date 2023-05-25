@@ -1,0 +1,27 @@
+.hero-menu{
+    width: 100%;
+    .hero-menu-bg{
+        // position: relative;
+        // z-index: 1;
+        width: 100%;
+        background-image: url('../images/bg/menu-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        aspect-ratio: 1440/735;
+        padding: 0px calc(687/1440*100vw) calc(148/1440*100vw) calc(104/1440*100vw);
+        display: flex;
+        align-items: flex-end;
+        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        // clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
+    .hero-menu-subtitle{
+        font-weight: 400;
+        font-size: calc(24/1440*100vw);
+        line-height: calc(32/1440*100vw);
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        span{
+            font-weight: 700;
+        }
+    }
+}

@@ -218,6 +218,23 @@
     .rooms-carousel-subtitle{
         margin-bottom: 50px;
     }
+///////
+    .eat-drink .menu-carousel-item{
+        width: 420px;
+    }
+    .eat-drink .item-title{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .eat-drink .item-descr{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .eat-drink .menu-overlay{
+        -webkit-clip-path: polygon(calc(50% - 80px) 0, 50% 50px, calc(50% + 80px) 0, 100% 0, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(calc(50% - 80px) 0, 50% 50px, calc(50% + 80px) 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+    
 //////
     .reviews .card{
         width: 760px;
@@ -316,6 +333,11 @@
     }
 
     .hero-event .hero-event-bg{
+        margin-top: 60px;
+    }
+
+    ///////////
+    .hero-menu .hero-menu-bg{
         margin-top: 60px;
     }
     
@@ -590,6 +612,64 @@
         line-height: 60px;
         margin-bottom: 20px;
     }
+    /////////// eat-drink
+    .eat-drink .menu-carousel{
+        margin-top: -40px;
+        -webkit-clip-path: polygon(0 4.6%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 4.6%, 100% 0, 100% 100%, 0% 100%);
+    }
+    .eat-drink .menu-carousel-item {
+        width: 313px;
+    }
+    .eat-drink .item-content{
+        padding: 86px 22px;
+    }
+    .eat-drink .item-title {
+        font-size: 31px;
+        line-height: 37px;
+    }
+    .eat-drink .item-descr {
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+    .eat-drink .hidden-content{
+        margin-top: 12px;
+    }
+    .eat-drink .item-starting_at{
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+    .eat-drink .item-price{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .eat-drink .menu-list{
+        column-gap: 32px;
+    }
+    .eat-drink .menu-container{
+        padding: 28px 10px 60px;
+    }
+    .eat-drink .menu-item-name{
+        font-size: 18px;
+        line-height: 24px;
+        margin-right: 12px;
+    }
+    .eat-drink .menu-item-price{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .eat-drink .menu-item-description{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .eat-drink .menu-overlay{
+        height: 60px;
+        top: -59px;
+        -webkit-clip-path: polygon(calc(50% - 68px) 0, 50% 38px, calc(50% + 68px) 0, 100% 0, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(calc(50% - 68px) 0, 50% 38px, calc(50% + 68px) 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
     ///special-events
     .special-events .special-events-wrap{
         display: none;
@@ -628,9 +708,11 @@
         height: calc( 40 / 1666 * 100vw);
     }
 
-    .hero-event .hero-event-bg {
+    .hero-event .hero-event-bg, .hero-menu .hero-menu-bg{
         margin-top: 90px;
     }
+
+    
 
     //entertainments
     .entertainments .entertainments-header{
@@ -802,6 +884,30 @@
         font-size: 18px;
         line-height: 22px;
     }
+    ///////eat-drink
+    .eat-drink .menu-carousel{
+        margin-top: -20px;
+        -webkit-clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%);
+    }
+
+    .eat-drink .menu-container{
+        padding: 28px 26px 60px;
+    }
+    .eat-drink .menu-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .eat-drink .menu-item-name, .eat-drink .menu-item-price{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .eat-drink .menu-item-header{
+        margin-bottom: 11px;
+    }
+    .eat-drink .menu-item-description{
+        font-size: 18.5201px;
+        line-height: 32px;
+    }
 
     ///reviews
     .reviews .card{
@@ -905,6 +1011,7 @@
         aspect-ratio: 377/521;
         padding: calc(88 / 375 * 100vw) calc(20 / 375 * 100vw);
     }
+    
     .hero-play .divider{
         display: none;
     }
@@ -928,6 +1035,19 @@
             font-size: calc(16 / 375 * 100vw);
             line-height: calc(26 / 375 * 100vw);
             font-weight: 400;
+        }
+    }
+    .hero-menu .hero-menu-bg{
+        background-image: url('../images/bg/menu-bg-mobile.png');
+        aspect-ratio: 375/521;
+        padding: calc(73 / 375 * 100vw) calc(20 / 375 * 100vw);
+    }
+    .hero-menu .hero-menu-subtitle{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        span{
+            font-weight: 700;
         }
     }
 
@@ -1088,6 +1208,16 @@
     ////rooms-carousel
     .rooms-carousel-wrapper{
         display: none;
+    }
+
+    ///////
+    .eat-drink .menu-item-header{
+        flex-direction: column;
+        align-items: start;
+    }
+    .eat-drink .menu-overlay{
+        height: 45px;
+        top: -44px;
     }
     /// special-events
 

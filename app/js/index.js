@@ -151,4 +151,30 @@ $(document).ready(function(){
         prevArrow: $(".slide-prev"),
         nextArrow: $(".slide-next")
     });
+    
+    $('.eat-drink .menu-carousel').on('afterChange', () => {
+        let activeSlide = $('.slick-active');
+        let typeOfActiveElementByDataAttr = activeSlide.data("type");
+        
+        let activeMenuItem = $(`.eat-drink .menu-container[data-type='${typeOfActiveElementByDataAttr}']`);
+        $('.eat-drink .menu-container').addClass('hidden-content');
+        activeMenuItem.removeClass('hidden-content');
+       
+    })
+    $('.eat-drink .menu-carousel').slick({
+        arrows: false,
+        // slidesToScroll: 5,
+        swipeToSlide: true,
+        infinite: true,
+        // slidesToShow: 3,
+        centerMode: true,
+        focusOnSelect: true,
+        variableWidth: true,
+
+        // speed: 300,
+        // slidesToShow: 1,
+        // centerMode: true,
+        // variableWidth: true
+    });
+    
 });

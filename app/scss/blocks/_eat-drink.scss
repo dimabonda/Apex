@@ -1,0 +1,148 @@
+.eat-drink{
+    width: 100%;
+    .menu-carousel{
+        margin-top: -70px;
+        -webkit-clip-path: polygon(0 8.6%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 8.6%, 100% 0, 100% 100%, 0% 100%);
+    }
+    .menu-carousel-item{
+        width: 480px;
+        position: relative;
+        aspect-ratio: 480/810;
+        cursor: pointer;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .menu-carousel-item:hover{
+        .hidden-content{
+            display: block;
+        }
+    }
+    .slick-track{
+        display: flex;
+    }
+    .slick-list{
+        overflow: hidden;
+    }
+    .slick-center{
+        cursor: default;
+    }
+
+
+    .item-content{
+        padding: 133px 33px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .item-title{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+    }
+    .hidden-content{
+        display: none;
+        margin-top: 24px;
+    }
+    .item-descr{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        max-width: 70%;
+        margin-bottom: 20px;
+    }
+    .item-starting_at{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .item-price{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+    }
+    .menu{
+        width: 100%;
+        background: #FFFFFF;
+        border-radius: 0px 0px 20px 20px;
+        position: relative;
+    }
+    .menu-container{
+        padding: 31px 20px 127px;
+        max-width: 1254px;
+        margin: 0 auto;
+    }
+    .gluten_free{
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #120550;
+    }
+    .menu-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 32px;
+        column-gap: 64px;
+    }
+    .menu-item-header{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10.5px;
+    }
+    .menu-item-name{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: #120550;
+        margin-right: 16px;
+    }
+    .menu-item-price{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: rgb(252, 111, 46);
+    }
+    .menu-item-description{
+        font-weight: 400;
+        font-size: 18.5201px;
+        line-height: 32px;
+        color: #120550;
+    }
+    .menu-footer{
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #120550;
+        margin-top: 64px;
+    }
+    .menu-overlay{
+        -webkit-clip-path: polygon(calc(50% - 101px) 0, 50%  58px, calc(50% + 101px) 0, 100% 0, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(calc(50% - 101px) 0, 50%  58px, calc(50% + 101px) 0, 100% 0, 100% 100%, 0 100%, 0 0);
+        position: absolute;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 85px;
+        top: -84px;
+    }
+    
+}
