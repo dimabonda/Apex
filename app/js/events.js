@@ -11,6 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const showDetails = (elem) => {
         if(!elem.classList.contains('events-info-item_active')) closeDetails();
         elem.classList.toggle('events-info-item_active');
+        elem.scrollIntoView({behavior: "smooth"})
     }
 
     const openDetailsByHash = () => {

@@ -1,0 +1,80 @@
+.hero-about{
+    width: 100%;
+    position: relative;
+    .hero-about-bg{
+        width: 100%;
+        height: 550px;
+        // aspect-ratio: 1440/550;
+        background-image: url('../images/bg/about-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        padding: 0px 0px 164px 100px;
+        // padding: 0px 0px calc(164 / 1440 * 100vw) calc(100 / 1440 * 100vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .bg-location{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+    .bg-title{
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 92px;
+        text-transform: uppercase;
+        .about{
+            margin-right: 22px;
+            color: #FFFFFF;
+        }
+        .us{
+            -webkit-text-stroke: 2px white;
+            color: transparent;
+        }
+    }
+    .career-link-wrapper{
+        display: flex;
+        align-items: center;
+        padding: 4px 10px 4px 4px;
+        max-width: 254px;
+        height: 32px;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        border-radius: 16px;
+        margin-bottom: 29px;
+        div{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1;
+        }
+        .join-team{
+            color: #120550;
+            margin-left: 12px;
+            margin-right: 4px;
+        }
+        div:first-child{
+            display: flex;
+            align-items: center;
+            padding: 2px 10px;
+            width: 110px;
+            height: 24px;
+            background: #FC6F2E;
+            mix-blend-mode: normal;
+            border-radius: 16px;
+        }
+        a{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+}

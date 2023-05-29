@@ -66,12 +66,20 @@
         display: grid;
     }
     .footer-main-header{
+        margin-bottom: 16px;
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
         text-transform: uppercase;
         color: #FFFFFF;
-        margin-bottom: 16px;
+        a{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
     }
     ul.play-list>li:nth-child(1), ul.party-list>li:nth-child(1){
         font-weight: 500;
@@ -83,7 +91,10 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 24px;
-        color: #EEF2F6;
+        a{
+            color: #EEF2F6;
+            text-decoration: none;
+        }
     }
     .play-list{
         grid-template-rows: repeat(10, 24px);
@@ -133,12 +144,11 @@
         margin: 36px 0px;
         row-gap: 16px;
     }
-    .footer-main-mobile-item{
+    .footer-main-mobile-item a{
         font-weight: 700;
         font-size: 14px;
         line-height: 20px;
         text-transform: uppercase;
         color: #FFFFFF;
-        
     }
 }

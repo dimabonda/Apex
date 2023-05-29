@@ -57,6 +57,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const info = findMatchedInfoCard(card)
         card.classList.toggle("card-active");
         info.classList.toggle("card-info-active");
+        info.scrollIntoView({behavior: "smooth"})
         showRestrictionsBtn()
     } 
 

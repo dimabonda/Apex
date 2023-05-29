@@ -340,7 +340,6 @@
     .hero-menu .hero-menu-bg{
         margin-top: 60px;
     }
-    
     ///entertainments 
     
     .entertainments .header-wrap{
@@ -711,9 +710,14 @@
     .hero-event .hero-event-bg, .hero-menu .hero-menu-bg{
         margin-top: 90px;
     }
-
-    
-
+    ///////////////
+    .hero-about .hero-about-bg{
+        padding: 0px 0px 130px 50px;
+    }
+    .hero-about .bg-title{
+        font-size: 80px;
+        line-height: 1;
+    }
     //entertainments
     .entertainments .entertainments-header{
         font-size: 34px;
@@ -1011,6 +1015,30 @@
         aspect-ratio: 377/521;
         padding: calc(88 / 375 * 100vw) calc(20 / 375 * 100vw);
     }
+
+    .hero-about .hero-about-bg{
+        background-image: url('../images/bg/about-bg-mobile.png');
+        margin-top: 100px;
+        aspect-ratio: 375/315;
+        height: auto;
+        padding: 0px 0px 50px 26px;
+    }
+    .hero-about .bg-title{
+        font-size: 52px;
+        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .hero-about .bg-title .us{
+        -webkit-text-stroke: 1px #fff;
+    }
+    .hero-about .bg-location{
+        display: none;
+    }
+    // .hero-about .career-link-wrapper{
+        
+    // }
     
     .hero-play .divider{
         display: none;
